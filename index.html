@@ -1,0 +1,2724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>All Files Converter — PDF, Image & Document Converter Online</title>
+  <meta name="description" content="All Files Converter for PDF, JPG, PNG, WEBP, TXT, DOCX, EPUB, XLSX and more. Convert PDF to image, images to PDF, documents, text and spreadsheets with supported browser-based tools." />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="author" content="MRS Engineers BD" />
+  <meta name="application-name" content="All Files Converter" />
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebApplication",
+    "name":"All Files Converter",
+    "applicationCategory":"UtilitiesApplication",
+    "operatingSystem":"Any",
+    "description":"Online file conversion tool for supported PDF, image, document, text, ebook and spreadsheet formats, including PDF to image and image to PDF conversions.",
+    "author":{"@type":"Organization","name":"MRS Engineers BD"},
+    "offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},
+    "featureList":["PDF Converter","PDF to Image Converter","Image Converter","Image to PDF Converter","JPG Converter","PNG Converter","WEBP Converter","TXT Converter","DOCX Converter","EPUB Converter","XLSX Converter"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"What is All Files Converter?","acceptedAnswer":{"@type":"Answer","text":"All Files Converter is a browser-based tool for supported image, PDF, document, text, ebook and spreadsheet conversions."}},
+      {"@type":"Question","name":"Can I convert PDF to image?","acceptedAnswer":{"@type":"Answer","text":"Yes, supported PDF workflows include PDF to JPG, PDF to PNG and other supported image outputs."}},
+      {"@type":"Question","name":"Can I convert images to PDF?","acceptedAnswer":{"@type":"Answer","text":"Yes, supported JPG, JPEG, PNG, GIF, WEBP and BMP images can be converted to PDF."}}
+    ]
+  }
+  </script>
+  <meta name="theme-color" content="#0a0c10" />
+  <meta property="og:title" content="All Files Converter — PDF, Image & Document Converter Online" />
+  <meta property="og:description" content="Convert supported PDF, image, document, text and spreadsheet formats, including PDF to image and image to PDF." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://pxdrop.online/raw/damksguhv1ts73cu8kl0" />
+  <link rel="icon" type="image/png" href="https://pxdrop.online/raw/damksguhv1ts73cu8kl0" />
+  <link rel="apple-touch-icon" href="https://pxdrop.online/raw/damksguhv1ts73cu8kl0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet" />
+  <style>
+    /* ============ CSS RESET & VARIABLES ============ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --font: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      --bg: #ffffff;
+      --bg-secondary: #f7f8fa;
+      --bg-card: #ffffff;
+      --bg-input: #f2f4f7;
+      --text-primary: #0b0e14;
+      --text-secondary: #4a4f5c;
+      --text-muted: #8b909e;
+      --border: #e2e5ea;
+      --border-light: #eef0f4;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+      --accent-soft: #eff6ff;
+      --accent-gradient: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+      --success: #16a34a;
+      --success-soft: #f0fdf4;
+      --error: #dc2626;
+      --error-soft: #fef2f2;
+      --warning: #d97706;
+      --warning-soft: #fffbeb;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 16px rgba(0,0,0,0.06);
+      --shadow-lg: 0 12px 40px rgba(0,0,0,0.08);
+      --shadow-xl: 0 20px 60px rgba(0,0,0,0.1);
+      --shadow-popover: 0 12px 32px rgba(0,0,0,0.14), 0 2px 8px rgba(0,0,0,0.08);
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 18px;
+      --radius-xl: 24px;
+      --radius-full: 9999px;
+      --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      --max-width: 1200px;
+      --nav-height: 64px;
+    }
+    [data-theme="dark"] {
+      --bg: #0a0c10;
+      --bg-secondary: #12151c;
+      --bg-card: #161a22;
+      --bg-input: #1e232e;
+      --text-primary: #f1f3f7;
+      --text-secondary: #a8afbd;
+      --text-muted: #6b7280;
+      --border: #2a303c;
+      --border-light: #1f242e;
+      --accent: #3b82f6;
+      --accent-hover: #60a5fa;
+      --accent-soft: #1e2a45;
+      --accent-gradient: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+      --success: #22c55e;
+      --success-soft: #0f2a1a;
+      --error: #ef4444;
+      --error-soft: #2a1414;
+      --warning: #f59e0b;
+      --warning-soft: #2a1f0a;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.2);
+      --shadow-md: 0 4px 16px rgba(0,0,0,0.3);
+      --shadow-lg: 0 12px 40px rgba(0,0,0,0.4);
+      --shadow-xl: 0 20px 60px rgba(0,0,0,0.5);
+      --shadow-popover: 0 12px 32px rgba(0,0,0,0.6), 0 2px 8px rgba(0,0,0,0.5);
+    }
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    }
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text-primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      transition: background var(--transition), color var(--transition);
+    }
+    img { max-width: 100%; display: block; }
+    button { cursor: pointer; font-family: inherit; border: none; background: none; color: inherit; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    input, textarea, select { font-family: inherit; font-size: inherit; color: inherit; }
+    ::selection { background: var(--accent); color: #fff; }
+
+    /* ============ LAYOUT ============ */
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 20px; width: 100%; }
+    .section { padding: 80px 0; }
+    .section-sm { padding: 48px 0; }
+    .section-header { text-align: center; margin-bottom: 48px; }
+    .section-header h2 {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 12px;
+      background: var(--accent-gradient);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .section-header p { color: var(--text-secondary); max-width: 600px; margin: 0 auto; font-size: 1.05rem; }
+
+    /* ============ NAVBAR ============ */
+    .navbar {
+      position: sticky; top: 0; z-index: 1000;
+      background: rgba(255,255,255,0.8);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-light);
+      transition: background var(--transition), border-color var(--transition);
+    }
+    [data-theme="dark"] .navbar { background: rgba(10,12,16,0.85); }
+    .navbar-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      height: var(--nav-height); gap: 16px;
+    }
+    .navbar-brand { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+    .navbar-brand img { width: 36px; height: 36px; border-radius: var(--radius-sm); object-fit: contain; }
+    .navbar-brand .brand-fallback {
+      width: 36px; height: 36px; border-radius: var(--radius-sm);
+      background: var(--accent-gradient); color: #fff;
+      display: none; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 0.7rem;
+    }
+    .navbar-brand span { font-weight: 700; font-size: 0.95rem; letter-spacing: -0.02em; white-space: nowrap; }
+    .nav-links { display: flex; align-items: center; gap: 4px; list-style: none; }
+    .nav-links a {
+      padding: 8px 14px; border-radius: var(--radius-full);
+      font-size: 0.875rem; font-weight: 500; color: var(--text-secondary);
+      transition: background var(--transition), color var(--transition);
+      text-decoration: none; white-space: nowrap;
+    }
+    .nav-links a:hover { background: var(--accent-soft); color: var(--accent); text-decoration: none; }
+    .nav-actions { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+    .icon-btn {
+      width: 40px; height: 40px; border-radius: var(--radius-full);
+      display: flex; align-items: center; justify-content: center;
+      background: var(--bg-input); color: var(--text-secondary);
+      transition: background var(--transition), color var(--transition), transform var(--transition);
+      font-size: 1.1rem; border: 1px solid var(--border-light);
+    }
+    .icon-btn:hover { background: var(--accent-soft); color: var(--accent); }
+    .icon-btn:active { transform: scale(0.95); }
+    .lang-switch {
+      display: flex; background: var(--bg-input); border-radius: var(--radius-full);
+      padding: 3px; border: 1px solid var(--border-light); gap: 2px;
+    }
+    .lang-switch button {
+      padding: 6px 12px; border-radius: var(--radius-full);
+      font-size: 0.75rem; font-weight: 600; color: var(--text-muted);
+      transition: background var(--transition), color var(--transition);
+    }
+    .lang-switch button.active { background: var(--accent); color: #fff; }
+    .hamburger {
+      display: none; flex-direction: column; gap: 5px;
+      width: 40px; height: 40px; align-items: center; justify-content: center;
+      border-radius: var(--radius-full); background: var(--bg-input);
+      border: 1px solid var(--border-light);
+    }
+    .hamburger span {
+      display: block; width: 18px; height: 2px; background: var(--text-primary);
+      border-radius: 2px; transition: transform var(--transition), opacity var(--transition);
+    }
+    .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .hamburger.open span:nth-child(2) { opacity: 0; }
+    .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    .mobile-menu {
+      display: none; position: absolute; top: var(--nav-height); left: 0; right: 0;
+      background: var(--bg-card); border-bottom: 1px solid var(--border);
+      padding: 16px 20px; flex-direction: column; gap: 4px;
+      box-shadow: var(--shadow-lg); max-height: calc(100vh - var(--nav-height));
+      overflow-y: auto;
+    }
+    .mobile-menu.open { display: flex; }
+    .mobile-menu a {
+      padding: 12px 16px; border-radius: var(--radius-md);
+      font-size: 0.95rem; font-weight: 500; color: var(--text-secondary);
+      text-decoration: none; transition: background var(--transition);
+    }
+    .mobile-menu a:hover { background: var(--accent-soft); color: var(--accent); }
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+    }
+    @media (max-width: 480px) {
+      .navbar-brand span { font-size: 0.8rem; }
+      .lang-switch button { padding: 5px 8px; font-size: 0.7rem; }
+    }
+
+    /* ============ HERO ============ */
+    .hero {
+      padding: 60px 0 40px;
+      background: var(--bg-secondary);
+      position: relative; overflow: hidden;
+      transition: background var(--transition);
+    }
+    .hero-inner { position: relative; z-index: 1; text-align: center; }
+    .hero h1 {
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      font-weight: 800; letter-spacing: -0.04em;
+      line-height: 1.1; margin-bottom: 16px;
+    }
+    .hero .tagline {
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      font-weight: 600; color: var(--accent);
+      margin-bottom: 12px;
+    }
+    .hero .description {
+      font-size: 1rem; color: var(--text-secondary);
+      max-width: 560px; margin: 0 auto 32px;
+    }
+    .hero-actions { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 12px 28px; border-radius: var(--radius-full);
+      font-weight: 600; font-size: 0.9rem;
+      transition: all var(--transition); border: 1px solid transparent;
+      text-decoration: none; white-space: nowrap;
+    }
+    .btn-primary {
+      background: var(--accent-gradient); color: #fff;
+      box-shadow: 0 4px 16px rgba(37,99,235,0.3);
+    }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(37,99,235,0.4); text-decoration: none; }
+    .btn-primary:active { transform: translateY(0); }
+    .btn-primary:disabled { opacity: 0.6; cursor: not-allowed; transform: none; box-shadow: none; }
+    .btn-outline {
+      background: var(--bg-card); color: var(--text-primary);
+      border: 1px solid var(--border); box-shadow: var(--shadow-sm);
+    }
+    .btn-outline:hover { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); text-decoration: none; }
+    .btn-lg { padding: 16px 36px; font-size: 1rem; }
+
+    /* ============ CONVERTER ============ */
+    .converter-section { padding: 0 0 60px; background: var(--bg-secondary); transition: background var(--transition); }
+    .converter-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius-xl); box-shadow: var(--shadow-xl);
+      padding: 32px; max-width: 900px; margin: 0 auto;
+      transition: background var(--transition), border-color var(--transition);
+    }
+    @media (max-width: 640px) { .converter-card { padding: 20px; } }
+    .tabs {
+      display: flex; background: var(--bg-input); border-radius: var(--radius-full);
+      padding: 4px; margin-bottom: 24px; gap: 4px;
+    }
+    .tabs button {
+      flex: 1; padding: 10px 16px; border-radius: var(--radius-full);
+      font-weight: 600; font-size: 0.85rem; color: var(--text-muted);
+      transition: background var(--transition), color var(--transition);
+      display: flex; align-items: center; justify-content: center; gap: 6px;
+    }
+    .tabs button.active { background: var(--bg-card); color: var(--accent); box-shadow: var(--shadow-sm); }
+
+    .upload-zone {
+      border: 2px dashed var(--border);
+      border-radius: var(--radius-lg);
+      padding: 48px 24px; text-align: center;
+      transition: all var(--transition); cursor: pointer;
+      background: var(--bg-secondary);
+    }
+    .upload-zone:hover, .upload-zone:focus-visible, .upload-zone.dragover {
+      border-color: var(--accent); background: var(--accent-soft);
+      outline: none;
+    }
+    .upload-zone.dragover { transform: scale(1.01); }
+    .upload-zone .upload-icon { font-size: 2.5rem; margin-bottom: 12px; opacity: 0.7; }
+    .upload-zone .upload-title { font-weight: 700; font-size: 1.1rem; margin-bottom: 6px; }
+    .upload-zone .upload-sub { color: var(--text-muted); font-size: 0.85rem; margin-bottom: 16px; }
+
+    .file-card {
+      display: flex; align-items: center; gap: 16px;
+      background: var(--bg-input); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 16px;
+      margin-top: 16px; animation: fadeIn 0.3s ease;
+    }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+    .file-icon {
+      width: 48px; height: 48px; border-radius: var(--radius-md);
+      background: var(--accent-soft); display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem; flex-shrink: 0;
+    }
+    .file-info { flex: 1; min-width: 0; }
+    .file-info .file-name {
+      font-weight: 600; font-size: 0.9rem; word-break: break-all;
+      overflow-wrap: anywhere; line-height: 1.3;
+    }
+    .file-info .file-meta { font-size: 0.78rem; color: var(--text-muted); margin-top: 2px; }
+    .file-remove {
+      width: 32px; height: 32px; border-radius: var(--radius-full);
+      display: flex; align-items: center; justify-content: center;
+      background: var(--error-soft); color: var(--error); font-size: 1rem;
+      flex-shrink: 0; transition: background var(--transition);
+    }
+    .file-remove:hover { background: var(--error); color: #fff; }
+
+    .text-input-area { display: flex; flex-direction: column; gap: 12px; }
+    .text-input-area textarea {
+      width: 100%; min-height: 160px; padding: 14px 16px;
+      border-radius: var(--radius-lg); border: 1px solid var(--border);
+      background: var(--bg-input); resize: vertical;
+      font-size: 0.9rem; line-height: 1.6;
+      transition: border-color var(--transition), box-shadow var(--transition);
+    }
+    .text-input-area textarea:focus {
+      outline: none; border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-soft);
+    }
+    .text-input-area textarea::placeholder { color: var(--text-muted); }
+
+    /* ============ FORMAT SELECTOR ============ */
+    .format-section { margin-top: 24px; }
+    .format-label {
+      font-weight: 700; font-size: 0.85rem; margin-bottom: 12px;
+      display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+    }
+    .format-selector-wrap { position: relative; }
+
+    .format-trigger {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 14px 18px;
+      background: var(--bg-input);
+      border: 1.5px solid var(--border);
+      border-radius: var(--radius-md);
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      transition: border-color var(--transition), background var(--transition), box-shadow var(--transition);
+      text-align: left;
+      min-height: 52px;
+    }
+    .format-trigger:hover { border-color: var(--accent); background: var(--accent-soft); }
+    .format-trigger:focus-visible {
+      outline: none; border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-soft);
+    }
+    .format-trigger.open {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-soft);
+    }
+    .format-trigger .ft-left {
+      display: flex; align-items: center; gap: 10px; min-width: 0;
+    }
+    .format-trigger .ft-icon {
+      width: 28px; height: 28px; border-radius: var(--radius-sm);
+      display: flex; align-items: center; justify-content: center;
+      background: var(--accent-soft); font-size: 0.95rem; flex-shrink: 0;
+    }
+    .format-trigger .ft-text {
+      display: flex; flex-direction: column; min-width: 0; line-height: 1.3;
+    }
+    .format-trigger .ft-name {
+      font-weight: 700; font-size: 0.92rem;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .format-trigger .ft-desc {
+      font-size: 0.72rem; color: var(--text-muted); font-weight: 500;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .format-trigger.placeholder .ft-name { color: var(--text-muted); font-weight: 600; }
+    .format-trigger .ft-chevron {
+      font-size: 0.75rem; color: var(--text-muted); flex-shrink: 0;
+      transition: transform var(--transition);
+    }
+    .format-trigger.open .ft-chevron { transform: rotate(180deg); color: var(--accent); }
+
+    .format-popover {
+      position: absolute;
+      top: calc(100% + 6px);
+      left: 0;
+      right: 0;
+      z-index: 1200;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-popover);
+      max-height: 380px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      opacity: 0;
+      transform: translateY(-6px) scale(0.98);
+      transform-origin: top center;
+      transition: opacity 0.18s ease, transform 0.18s ease;
+      pointer-events: none;
+      visibility: hidden;
+    }
+    .format-popover.open {
+      opacity: 1; transform: translateY(0) scale(1); pointer-events: auto; visibility: visible;
+    }
+    .format-popover-body {
+      overflow-y: auto;
+      padding: 6px;
+      flex: 1;
+      scrollbar-width: thin;
+      scrollbar-color: var(--border) transparent;
+    }
+    .format-popover-body::-webkit-scrollbar { width: 8px; }
+    .format-popover-body::-webkit-scrollbar-track { background: transparent; }
+    .format-popover-body::-webkit-scrollbar-thumb {
+      background: var(--border); border-radius: 4px;
+    }
+    .format-popover-body::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
+
+    .format-item {
+      display: flex; align-items: center; gap: 12px;
+      width: 100%; padding: 12px 14px;
+      border-radius: var(--radius-md);
+      text-align: left;
+      transition: background var(--transition);
+      cursor: pointer;
+      border: 1px solid transparent;
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--text-primary);
+      background: transparent;
+      font-family: inherit;
+    }
+    .format-item + .format-item { margin-top: 2px; }
+    .format-item:hover:not(:disabled) { background: var(--bg-input); }
+    .format-item:focus-visible {
+      outline: none;
+      background: var(--bg-input);
+      border-color: var(--accent);
+    }
+    .format-item.selected {
+      background: var(--accent-soft);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+    .format-item:disabled {
+      opacity: 0.72; cursor: not-allowed;
+    }
+    .format-item .fi-icon {
+      width: 26px; height: 26px; border-radius: var(--radius-sm);
+      display: flex; align-items: center; justify-content: center;
+      background: var(--bg-input); font-size: 0.85rem; flex-shrink: 0;
+    }
+    .format-item.selected .fi-icon { background: var(--accent); color: #fff; }
+    .format-item .fi-name {
+      flex: 1; min-width: 0;
+      display: flex; align-items: center; gap: 6px;
+      white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    }
+    .format-item .fi-name-text { font-weight: 700; }
+    .format-item .fi-badge {
+      font-size: 0.55rem; font-weight: 700;
+      padding: 2px 6px; border-radius: var(--radius-full);
+      background: var(--warning); color: #fff;
+      text-transform: uppercase; letter-spacing: 0.04em;
+      flex-shrink: 0;
+    }
+    .format-item .fi-badge.browser { background: var(--text-muted); }
+    .format-item .fi-check {
+      color: var(--accent); font-size: 1rem; flex-shrink: 0;
+      opacity: 0;
+    }
+    .format-item.selected .fi-check { opacity: 1; }
+
+    .format-overlay { display: none; }
+    @media (max-width: 640px) {
+      .format-popover {
+        position: fixed;
+        left: 12px; right: 12px;
+        bottom: 12px;
+        top: auto;
+        max-height: 70vh;
+        transform: translateY(20px) scale(1);
+        transform-origin: bottom center;
+        border-radius: var(--radius-xl);
+      }
+      .format-popover.open { transform: translateY(0) scale(1); }
+      .format-popover::before {
+        content: '';
+        display: block;
+        width: 40px; height: 4px;
+        background: var(--border);
+        border-radius: 2px;
+        margin: 8px auto 0;
+        flex-shrink: 0;
+      }
+      .format-overlay {
+        display: block;
+        position: fixed; inset: 0;
+        background: rgba(0,0,0,0.35);
+        z-index: 1199;
+        opacity: 0; pointer-events: none;
+        transition: opacity 0.2s ease;
+      }
+      .format-overlay.open { opacity: 1; pointer-events: auto; }
+      .format-item { padding: 14px 16px; font-size: 0.92rem; }
+    }
+
+    .quality-panel {
+      margin-top: 16px; padding: 16px; border-radius: var(--radius-md);
+      background: var(--bg-secondary); border: 1px solid var(--border-light);
+    }
+    .quality-panel-title {
+      font-size: 0.8rem; font-weight: 700; margin-bottom: 10px;
+      display: flex; align-items: center; gap: 6px;
+    }
+    .quality-options { display: flex; gap: 8px; flex-wrap: wrap; }
+    .quality-option {
+      padding: 8px 16px; border-radius: var(--radius-full);
+      border: 1.5px solid var(--border); background: var(--bg-input);
+      font-size: 0.78rem; font-weight: 600;
+      transition: all var(--transition);
+    }
+    .quality-option.selected {
+      border-color: var(--accent); background: var(--accent); color: #fff;
+    }
+    .quality-slider-wrap {
+      margin-top: 12px; display: flex; align-items: center; gap: 12px;
+    }
+    .quality-slider-wrap input[type="range"] {
+      flex: 1; accent-color: var(--accent); height: 6px;
+    }
+    .quality-slider-wrap .quality-value {
+      font-size: 0.8rem; font-weight: 700; min-width: 40px; text-align: right;
+    }
+
+    .convert-btn-wrap { margin-top: 28px; }
+    .convert-btn {
+      width: 100%; padding: 16px; border-radius: var(--radius-full);
+      background: var(--accent-gradient); color: #fff;
+      font-weight: 700; font-size: 1.05rem;
+      display: flex; align-items: center; justify-content: center; gap: 10px;
+      transition: all var(--transition);
+      box-shadow: 0 4px 20px rgba(37,99,235,0.35);
+    }
+    .convert-btn:hover:not(:disabled) { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(37,99,235,0.45); }
+    .convert-btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; box-shadow: none; }
+    .spinner {
+      width: 18px; height: 18px; border: 2.5px solid rgba(255,255,255,0.3);
+      border-top-color: #fff; border-radius: 50%;
+      animation: spin 0.7s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .result-card {
+      background: var(--success-soft); border: 1px solid var(--success);
+      border-radius: var(--radius-lg); padding: 24px; margin-top: 24px;
+      text-align: center; animation: fadeIn 0.4s ease;
+    }
+    .result-card .success-icon { font-size: 2.5rem; margin-bottom: 8px; }
+    .result-card h3 { font-size: 1.1rem; font-weight: 700; color: var(--success); margin-bottom: 4px; }
+    .result-card .result-meta { font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 16px; word-break: break-all; }
+    .result-actions { display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
+
+    .status-msg {
+      padding: 14px 18px; border-radius: var(--radius-md);
+      font-size: 0.88rem; font-weight: 500; margin-top: 16px;
+      display: flex; align-items: flex-start; gap: 10px;
+      animation: fadeIn 0.3s ease; line-height: 1.5;
+    }
+    .status-msg.error { background: var(--error-soft); color: var(--error); border: 1px solid var(--error); }
+    .status-msg.info { background: var(--accent-soft); color: var(--accent); border: 1px solid var(--accent); }
+    .status-msg.warning { background: var(--warning-soft); color: var(--warning); border: 1px solid var(--warning); }
+    .status-msg.success { background: var(--success-soft); color: var(--success); border: 1px solid var(--success); }
+
+    /* ============ AD CONTAINER ============ */
+    .ad-container {
+      display: flex; flex-direction: column; align-items: center;
+      padding: 24px 0; overflow: hidden; width: 100%;
+    }
+    .ad-label {
+      font-size: 0.65rem; text-transform: uppercase; letter-spacing: 0.1em;
+      color: var(--text-muted); margin-bottom: 8px; font-weight: 600;
+    }
+    .ad-wrapper {
+      display: flex; justify-content: center; align-items: center;
+      width: 100%; max-width: 100%; overflow: hidden;
+    }
+    .ad-wrapper iframe { max-width: 100%; border: none; }
+
+    /* ============ FEATURES ============ */
+    .features-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .feature-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 24px;
+      transition: all var(--transition);
+    }
+    .feature-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: var(--accent); }
+    .feature-card .fc-icon { font-size: 1.6rem; margin-bottom: 12px; }
+    .feature-card h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 6px; }
+    .feature-card p { font-size: 0.82rem; color: var(--text-secondary); line-height: 1.5; }
+
+    /* ============ HOW TO USE ============ */
+    .steps-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px; counter-reset: step;
+    }
+    .step-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 28px 20px;
+      text-align: center; position: relative;
+      transition: all var(--transition); counter-increment: step;
+    }
+    .step-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+    .step-card::before {
+      content: counter(step);
+      position: absolute; top: -14px; left: 50%; transform: translateX(-50%);
+      width: 32px; height: 32px; border-radius: 50%;
+      background: var(--accent-gradient); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 0.85rem;
+      box-shadow: 0 4px 12px rgba(37,99,235,0.3);
+    }
+    .step-card .step-icon { font-size: 1.8rem; margin-bottom: 12px; margin-top: 8px; }
+    .step-card h3 { font-size: 0.9rem; font-weight: 700; margin-bottom: 6px; }
+    .step-card p { font-size: 0.8rem; color: var(--text-secondary); line-height: 1.5; }
+
+    /* ============ FORMATS ============ */
+    .formats-grid {
+      display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
+    }
+    .format-badge {
+      padding: 10px 20px; border-radius: var(--radius-full);
+      background: var(--bg-card); border: 1.5px solid var(--border);
+      font-weight: 700; font-size: 0.82rem;
+      transition: all var(--transition); display: flex; align-items: center; gap: 6px;
+    }
+    .format-badge:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+    .format-badge.supported { border-color: var(--success); color: var(--success); }
+    .format-badge.partial { border-color: var(--warning); color: var(--warning); }
+    .format-badge.browser { border-color: var(--text-muted); color: var(--text-muted); }
+    .format-badge .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+    .format-badge.supported .dot { background: var(--success); }
+    .format-badge.partial .dot { background: var(--warning); }
+    .format-badge.browser .dot { background: var(--text-muted); }
+    .format-legend {
+      display: flex; gap: 24px; justify-content: center; flex-wrap: wrap;
+      margin-top: 24px; font-size: 0.8rem; color: var(--text-secondary);
+    }
+    .format-legend span { display: flex; align-items: center; gap: 6px; }
+
+    /* ============ FAQ ============ */
+    .faq-list { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 10px; }
+    .faq-item {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius-md); overflow: hidden;
+      transition: border-color var(--transition);
+    }
+    .faq-item.open { border-color: var(--accent); }
+    .faq-question {
+      width: 100%; padding: 18px 20px; text-align: left;
+      font-weight: 600; font-size: 0.9rem;
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      transition: background var(--transition);
+    }
+    .faq-question:hover { background: var(--bg-secondary); }
+    .faq-question .chevron {
+      font-size: 0.8rem; transition: transform var(--transition);
+      color: var(--text-muted); flex-shrink: 0;
+    }
+    .faq-item.open .faq-question .chevron { transform: rotate(180deg); color: var(--accent); }
+    .faq-answer {
+      max-height: 0; overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+      padding: 0 20px;
+    }
+    .faq-item.open .faq-answer { max-height: 500px; padding: 0 20px 18px; }
+    .faq-answer p { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.6; }
+
+    /* ============ ABOUT / PRIVACY / CONTACT ============ */
+    .info-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius-xl); padding: 40px;
+      max-width: 800px; margin: 0 auto;
+    }
+    @media (max-width: 640px) { .info-card { padding: 24px; } }
+    .info-card h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 16px; }
+    .info-card p { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 12px; }
+    .info-card ul { padding-left: 20px; margin-bottom: 12px; }
+    .info-card li { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.7; margin-bottom: 6px; }
+    .contact-email {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-weight: 600; font-size: 1rem; color: var(--accent);
+      padding: 12px 24px; background: var(--accent-soft);
+      border-radius: var(--radius-full); margin: 8px 0 16px;
+      text-decoration: none; transition: all var(--transition);
+      word-break: break-all;
+    }
+    .contact-email:hover { background: var(--accent); color: #fff; text-decoration: none; }
+
+    /* ============ FOOTER ============ */
+    .footer {
+      background: var(--bg-secondary); border-top: 1px solid var(--border);
+      padding: 48px 0 32px; transition: background var(--transition);
+    }
+    .footer-grid {
+      display: grid; grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px; margin-bottom: 32px;
+    }
+    @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr; gap: 28px; } }
+    .footer-brand { display: flex; flex-direction: column; gap: 12px; }
+    .footer-brand .fb-logo { display: flex; align-items: center; gap: 10px; }
+    .footer-brand .fb-logo img { width: 32px; height: 32px; border-radius: var(--radius-sm); }
+    .footer-brand .fb-logo .fb-fallback {
+      width: 32px; height: 32px; border-radius: var(--radius-sm);
+      background: var(--accent-gradient); color: #fff;
+      display: none; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 0.6rem;
+    }
+    .footer-brand .fb-logo span { font-weight: 700; font-size: 0.9rem; }
+    .footer-brand p { font-size: 0.82rem; color: var(--text-muted); max-width: 320px; }
+    .footer-col h4 { font-size: 0.85rem; font-weight: 700; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.05em; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+    .footer-col a { font-size: 0.82rem; color: var(--text-secondary); text-decoration: none; transition: color var(--transition); }
+    .footer-col a:hover { color: var(--accent); }
+    .footer-bottom {
+      border-top: 1px solid var(--border); padding-top: 24px;
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+      text-align: center;
+    }
+    .footer-bottom p { font-size: 0.78rem; color: var(--text-muted); }
+    .footer-bottom .dev { font-weight: 600; color: var(--text-secondary); }
+    .footer-bottom .dev a { color: var(--accent); text-decoration: none; }
+
+    /* ============ UTILITY ============ */
+    .hidden { display: none !important; }
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+    .text-center { text-align: center; }
+  </style>
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container navbar-inner">
+      <a href="#home" class="navbar-brand" aria-label="All Files Converter Home">
+        <img src="https://pxdrop.online/raw/damksguhv1ts73cu8kl0" alt="All Files Converter logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+        <div class="brand-fallback" aria-hidden="true">AFC</div>
+        <span data-i18n="brand">All Files Converter</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#home" data-i18n="nav_home">Home</a></li>
+        <li><a href="#features" data-i18n="nav_features">Features</a></li>
+        <li><a href="#how-to-use" data-i18n="nav_how">How to Use</a></li>
+        <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
+        <li><a href="#about" data-i18n="nav_about">About</a></li>
+        <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="lang-switch" role="group" aria-label="Language selector">
+          <button id="langEn" class="active" aria-label="English">EN</button>
+          <button id="langBn" aria-label="বাংলা">BN</button>
+        </div>
+        <button id="themeToggle" class="icon-btn" aria-label="Toggle dark mode">🌙</button>
+        <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="mobile-menu" role="menu">
+      <a href="#home" role="menuitem" data-i18n="nav_home">Home</a>
+      <a href="#features" role="menuitem" data-i18n="nav_features">Features</a>
+      <a href="#how-to-use" role="menuitem" data-i18n="nav_how">How to Use</a>
+      <a href="#faq" role="menuitem" data-i18n="nav_faq">FAQ</a>
+      <a href="#about" role="menuitem" data-i18n="nav_about">About</a>
+      <a href="#contact" role="menuitem" data-i18n="nav_contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ============ HERO ============ -->
+  <header id="home" class="hero">
+    <div class="container hero-inner">
+      <h1>
+        <span data-i18n="hero_title">All Files Converter</span>
+      </h1>
+      <p class="tagline" data-i18n="hero_tagline">Convert Files. Simply. Freely.</p>
+      <p class="description" data-i18n="hero_desc">Convert supported images, documents, text, spreadsheets, presentations and ebooks online for free.</p>
+      <div class="hero-actions">
+        <a href="#converter" class="btn btn-primary btn-lg" data-i18n="hero_cta">Start Converting</a>
+        <a href="#how-to-use" class="btn btn-outline btn-lg" data-i18n="hero_how">How It Works</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ CONVERTER ============ -->
+  <section id="converter" class="converter-section">
+    <div class="container">
+      <div class="converter-card">
+        <!-- Tabs -->
+        <div class="tabs" role="tablist">
+          <button id="tabUpload" class="active" role="tab" aria-selected="true" aria-controls="panelUpload">
+            <span>📁</span> <span data-i18n="tab_upload">Upload File</span>
+          </button>
+          <button id="tabPaste" role="tab" aria-selected="false" aria-controls="panelPaste">
+            <span>📝</span> <span data-i18n="tab_paste">Paste Text</span>
+          </button>
+        </div>
+
+        <!-- Panel: Upload -->
+        <div id="panelUpload" role="tabpanel" aria-labelledby="tabUpload">
+          <div id="uploadZone" class="upload-zone" tabindex="0" role="button" aria-label="Upload file area">
+            <div class="upload-icon">📤</div>
+            <div class="upload-title" data-i18n="drop_title">Drop your file here</div>
+            <div class="upload-sub" data-i18n="drop_sub">or click to browse</div>
+            <button type="button" class="btn btn-outline" id="browseBtn" data-i18n="browse_btn">Browse Files</button>
+            <input type="file" id="fileInput" class="sr-only" aria-label="Choose file" />
+          </div>
+
+          <div id="fileCard" class="file-card hidden">
+            <div class="file-icon" id="fileIcon">📄</div>
+            <div class="file-info">
+              <div class="file-name" id="fileName"></div>
+              <div class="file-meta" id="fileMeta"></div>
+            </div>
+            <button class="file-remove" id="removeFile" aria-label="Remove file">✕</button>
+          </div>
+
+          <div id="formatSectionUpload" class="format-section hidden">
+            <div class="format-label">
+              <span>🔄</span> <span data-i18n="convert_to">Convert To</span>
+            </div>
+            <div class="format-selector-wrap">
+              <button type="button" id="formatTriggerUpload" class="format-trigger placeholder" aria-haspopup="listbox" aria-expanded="false">
+                <span class="ft-left">
+                  <span class="ft-icon" id="formatTriggerIconUpload">🎯</span>
+                  <span class="ft-text">
+                    <span class="ft-name" id="formatTriggerNameUpload" data-i18n="select_output_format">Select Output Format</span>
+                    <span class="ft-desc hidden" id="formatTriggerDescUpload"></span>
+                  </span>
+                </span>
+                <span class="ft-chevron">▾</span>
+              </button>
+              <div id="formatPopoverUpload" class="format-popover" role="listbox" aria-label="Output format selector">
+                <div class="format-popover-body" id="formatPopoverBodyUpload" role="presentation"></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="qualityPanelUpload" class="quality-panel hidden">
+            <div class="quality-panel-title"><span>⚙️</span> <span data-i18n="quality_title">Output Quality</span></div>
+            <div class="quality-options" id="qualityOptionsUpload"></div>
+            <div class="quality-slider-wrap hidden" id="qualitySliderWrapUpload">
+              <input type="range" id="qualitySliderUpload" min="50" max="100" value="95" aria-label="Quality percentage" />
+              <span class="quality-value" id="qualityValueUpload">95%</span>
+            </div>
+          </div>
+
+          <div class="convert-btn-wrap">
+            <button id="convertBtnUpload" class="convert-btn" disabled>
+              <span>🚀</span> <span data-i18n="convert_now">Convert Now</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Panel: Paste Text -->
+        <div id="panelPaste" class="hidden" role="tabpanel" aria-labelledby="tabPaste">
+          <div class="text-input-area">
+            <textarea id="pasteText" placeholder="Paste or type your text here..." aria-label="Text input"></textarea>
+          </div>
+
+          <div class="format-section">
+            <div class="format-label">
+              <span>🔄</span> <span data-i18n="convert_to">Convert To</span>
+            </div>
+            <div class="format-selector-wrap">
+              <button type="button" id="formatTriggerPaste" class="format-trigger placeholder" aria-haspopup="listbox" aria-expanded="false">
+                <span class="ft-left">
+                  <span class="ft-icon" id="formatTriggerIconPaste">🎯</span>
+                  <span class="ft-text">
+                    <span class="ft-name" id="formatTriggerNamePaste" data-i18n="select_output_format">Select Output Format</span>
+                    <span class="ft-desc hidden" id="formatTriggerDescPaste"></span>
+                  </span>
+                </span>
+                <span class="ft-chevron">▾</span>
+              </button>
+              <div id="formatPopoverPaste" class="format-popover" role="listbox" aria-label="Output format selector">
+                <div class="format-popover-body" id="formatPopoverBodyPaste" role="presentation"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="convert-btn-wrap">
+            <button id="convertBtnPaste" class="convert-btn" disabled>
+              <span>🚀</span> <span data-i18n="convert_now">Convert Now</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Status & Result -->
+        <div id="statusMsg" class="status-msg hidden" role="alert"></div>
+        <div id="resultCard" class="result-card hidden"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ADSTERRA AD ============ -->
+  <div class="ad-container">
+    <div class="ad-label" data-i18n="ad_label">Advertisement</div>
+    <div class="ad-wrapper">
+      <script type="text/javascript">
+        atOptions = {
+          'key' : 'f4af6c08c26e54c25e3a0642c28e1b1b',
+          'format' : 'iframe',
+          'height' : 60,
+          'width' : 468,
+          'params' : {}
+        };
+      </script>
+      <script src="https://www.highrevenueformat.com/f4af6c08c26e54c25e3a0642c28e1b1b/invoke.js"></script>
+    </div>
+  </div>
+
+  <!-- ============ FEATURES ============ -->
+  <section id="features" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="features_title">Why Choose Us</h2>
+        <p data-i18n="features_sub">Everything you need for simple file conversion.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card"><div class="fc-icon">🔓</div><h3 data-i18n="feat_noreg">No Registration</h3><p data-i18n="feat_noreg_desc">Start converting immediately. No account or email required.</p></div>
+        <div class="feature-card"><div class="fc-icon">💎</div><h3 data-i18n="feat_free">Free to Use</h3><p data-i18n="feat_free_desc">All supported conversions are completely free.</p></div>
+        <div class="feature-card"><div class="fc-icon">📦</div><h3 data-i18n="feat_formats">Multiple Formats</h3><p data-i18n="feat_formats_desc">Images, documents, text, spreadsheets and more.</p></div>
+        <div class="feature-card"><div class="fc-icon">⚡</div><h3 data-i18n="feat_easy">Easy Conversion</h3><p data-i18n="feat_easy_desc">Simple workflow: select, choose, convert, download.</p></div>
+        <div class="feature-card"><div class="fc-icon">🌐</div><h3 data-i18n="feat_browser">Browser-Based</h3><p data-i18n="feat_browser_desc">No server uploads for supported conversions.</p></div>
+        <div class="feature-card"><div class="fc-icon">✨</div><h3 data-i18n="feat_quality">High-Quality Output</h3><p data-i18n="feat_quality_desc">Preserve resolution and formatting where possible.</p></div>
+        <div class="feature-card"><div class="fc-icon">🖱️</div><h3 data-i18n="feat_drag">Drag & Drop</h3><p data-i18n="feat_drag_desc">Easily drop files into the converter.</p></div>
+        <div class="feature-card"><div class="fc-icon">📱</div><h3 data-i18n="feat_mobile">Mobile Friendly</h3><p data-i18n="feat_mobile_desc">Works beautifully on phones and tablets.</p></div>
+        <div class="feature-card"><div class="fc-icon">🌗</div><h3 data-i18n="feat_theme">Dark / Light Mode</h3><p data-i18n="feat_theme_desc">Choose the theme that suits your eyes.</p></div>
+        <div class="feature-card"><div class="fc-icon">🌍</div><h3 data-i18n="feat_lang">BN / EN</h3><p data-i18n="feat_lang_desc">Full interface support for Bengali and English.</p></div>
+        <div class="feature-card"><div class="fc-icon">🎯</div><h3 data-i18n="feat_simple">Simple Interface</h3><p data-i18n="feat_simple_desc">Clean, modern, and clutter-free design.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONVERSION TOPICS / SEO CONTENT ============ -->
+  <section id="conversion-tools" class="section section-sm">
+    <div class="container">
+      <div class="section-header">
+        <h2>Online File Converter Tools</h2>
+        <p>Convert supported files between practical image, PDF, document, text, ebook and spreadsheet formats.</p>
+      </div>
+      <div class="info-card">
+        <h3>PDF Converter</h3>
+        <p>Use the PDF converter for supported PDF workflows, including <strong>PDF to Image</strong>, PDF to JPG, PDF to PNG, PDF to WEBP, PDF to TXT, PDF to HTML, PDF to DOCX, PDF to ODT and PDF to RTF.</p>
+        <h3>Image Converter</h3>
+        <p>Convert supported JPG, JPEG, PNG, GIF, WEBP and BMP images between compatible formats, and create PDF files from supported images.</p>
+        <h3>Document & Text Converter</h3>
+        <p>Convert supported TXT, HTML, RTF, DOCX and ODT content to compatible document and text formats. Paste text directly when you do not need to upload a file.</p>
+        <h3>Spreadsheet Converter</h3>
+        <p>Convert supported CSV, XLS and XLSX spreadsheets between compatible spreadsheet and text outputs.</p>
+        <p><strong>Popular tools:</strong> PDF Converter, PDF to Image Converter, JPG Converter, PNG Converter, Image Converter, DOCX Converter, TXT Converter, EPUB Converter and XLSX Converter.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW TO USE ============ -->
+  <section id="how-to-use" class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="how_title">How to Use</h2>
+        <p data-i18n="how_sub">Convert your files in just a few simple steps.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card"><div class="step-icon">📁</div><h3 data-i18n="step1_title">Select or Drop File</h3><p data-i18n="step1_desc">Choose a file from your device or drag & drop it.</p></div>
+        <div class="step-card"><div class="step-icon">🎯</div><h3 data-i18n="step2_title">Choose Output Format</h3><p data-i18n="step2_desc">Pick the format you want to convert to.</p></div>
+        <div class="step-card"><div class="step-icon">🚀</div><h3 data-i18n="step3_title">Click Convert Now</h3><p data-i18n="step3_desc">Start the conversion process.</p></div>
+        <div class="step-card"><div class="step-icon">⏳</div><h3 data-i18n="step4_title">Wait for Conversion</h3><p data-i18n="step4_desc">The file is processed locally in your browser.</p></div>
+        <div class="step-card"><div class="step-icon">⬇️</div><h3 data-i18n="step5_title">Download Result</h3><p data-i18n="step5_desc">Save your converted file to your device.</p></div>
+      </div>
+      <div style="max-width: 720px; margin: 40px auto 0; background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 24px;">
+        <h3 style="font-weight:700; margin-bottom:8px;" data-i18n="how_text_title">Using Paste Text</h3>
+        <p style="font-size:0.85rem; color: var(--text-secondary);" data-i18n="how_text_desc">Switch to the "Paste Text" tab, type or paste your content, select an output format (TXT, HTML, RTF, PDF, DOCX), and click Convert Now. This is ideal for quick notes and snippets.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SUPPORTED FORMATS ============ -->
+  <section id="formats" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="formats_title">Supported Formats</h2>
+        <p data-i18n="formats_sub">Formats available for conversion in browser-only mode.</p>
+      </div>
+      <div class="formats-grid">
+        <span class="format-badge supported"><span class="dot"></span> JPG</span>
+        <span class="format-badge supported"><span class="dot"></span> JPEG</span>
+        <span class="format-badge supported"><span class="dot"></span> PNG</span>
+        <span class="format-badge supported"><span class="dot"></span> GIF</span>
+        <span class="format-badge supported"><span class="dot"></span> WEBP</span>
+        <span class="format-badge supported"><span class="dot"></span> BMP</span>
+        <span class="format-badge partial"><span class="dot"></span> SVG</span>
+        <span class="format-badge supported"><span class="dot"></span> PDF</span>
+        <span class="format-badge supported"><span class="dot"></span> TXT</span>
+        <span class="format-badge browser"><span class="dot"></span> DOC</span>
+        <span class="format-badge partial"><span class="dot"></span> DOCX</span>
+        <span class="format-badge partial"><span class="dot"></span> ODT</span>
+        <span class="format-badge supported"><span class="dot"></span> RTF</span>
+        <span class="format-badge partial"><span class="dot"></span> EPUB</span>
+        <span class="format-badge supported"><span class="dot"></span> HTML</span>
+        <span class="format-badge partial"><span class="dot"></span> PPTX</span>
+        <span class="format-badge partial"><span class="dot"></span> XLSX</span>
+        <span class="format-badge browser"><span class="dot"></span> XLS</span>
+        <span class="format-badge supported"><span class="dot"></span> CSV</span>
+      </div>
+      <div class="format-legend">
+        <span><span class="dot" style="width:8px;height:8px;border-radius:50%;background:var(--success);display:inline-block;"></span> <span data-i18n="fmt_supported">Fully Supported</span></span>
+        <span><span class="dot" style="width:8px;height:8px;border-radius:50%;background:var(--warning);display:inline-block;"></span> <span data-i18n="fmt_partial">Limited / Partial</span></span>
+        <span><span class="dot" style="width:8px;height:8px;border-radius:50%;background:var(--text-muted);display:inline-block;"></span> <span data-i18n="fmt_browser">Browser-Dependent</span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq" class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="faq_title">Frequently Asked Questions</h2>
+        <p data-i18n="faq_sub">Answers to common questions about All Files Converter.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item"><button class="faq-question"><span data-i18n="faq_q1">What is All Files Converter?</span><span class="chevron">▼</span></button><div class="faq-answer"><p data-i18n="faq_a1">It is a free browser-based tool that converts supported image, document, text, and spreadsheet files without requiring registration.</p></div></div>
+        <div class="faq-item"><button class="faq-question"><span data-i18n="faq_q2">Is registration required?</span><span class="chevron">▼</span></button><div class="faq-answer"><p data-i18n="faq_a2">No. You can use the converter immediately without creating an account.</p></div></div>
+        <div class="faq-item"><button class="faq-question"><span data-i18n="faq_q3">Is it free?</span><span class="chevron">▼</span></button><div class="faq-answer"><p data-i18n="faq_a3">Yes, all supported conversions are completely free to use.</p></div></div>
+        <div class="faq-item"><button class="faq-question"><span data-i18n="faq_q4">Are my files uploaded to a server?</span><span class="chevron">▼</span></button><div class="faq-answer"><p data-i18n="faq_a4">For most supported conversions, files are processed locally in your browser. We do not permanently store your files.</p></div></div>
+        <div class="faq-item"><button class="faq-question"><span data-i18n="faq_q5">Which formats are supported?</span><span class="chevron">▼</span></button><div class="faq-answer"><p data-i18n="faq_a5">We support many image formats (JPG, JPEG, PNG, GIF, WEBP, BMP, SVG), documents (PDF, TXT, DOC, DOCX, ODT, RTF, EPUB, HTML), presentations (PPTX), and spreadsheets (XLSX, XLS, CSV). See the supported formats section for details.</p></div></div>
+        <div class="faq-item"><button class="faq-question"><span data-i18n="faq_q6">Can I convert images?</span><span class="chevron">▼</span></button><div class="faq-answer"><p data-i18n="faq_a6">Yes, you can convert between common image formats and create PDFs from images.</p></div></div>
+        <div class="faq-item"><button class="faq-question"><span data-i18n="faq_q7">Can I convert documents?</span><span class="chevron">▼</span></button><div class="faq-answer"><p data-i18n="faq_a7">Yes, we support text extraction and format conversion for many document types, including TXT, HTML, RTF, and PDF generation.</p></div></div>
+        <div class="faq-item"><button class="faq-question"><span data-i18n="faq_q8">Can I convert text by pasting it?</span><span class="chevron">▼</span></button><div class="faq-answer"><p data-i18n="faq_a8">Absolutely. Use the "Paste Text" tab to enter or paste text and convert it to TXT, HTML, RTF, PDF, or DOCX.</p></div></div>
+        <div class="faq-item"><button class="faq-question"><span data-i18n="faq_q9">Why are some conversions unavailable?</span><span class="chevron">▼</span></button><div class="faq-answer"><p data-i18n="faq_a9">Some complex conversions (like advanced DOCX or PPTX rendering) are not fully reliable in a browser-only environment. We only list conversions that actually work.</p></div></div>
+        <div class="faq-item"><button class="faq-question"><span data-i18n="faq_q10">Is there a file-size limit?</span><span class="chevron">▼</span></button><div class="faq-answer"><p data-i18n="faq_a10">Since processing is local, extremely large files may exceed browser memory. We recommend files under 50 MB for best performance.</p></div></div>
+        <div class="faq-item"><button class="faq-question"><span data-i18n="faq_q11">Can I use it on mobile?</span><span class="chevron">▼</span></button><div class="faq-answer"><p data-i18n="faq_a11">Yes, the application is fully responsive and works on smartphones and tablets.</p></div></div>
+        <div class="faq-item"><button class="faq-question"><span data-i18n="faq_q12">Does it convert video or audio?</span><span class="chevron">▼</span></button><div class="faq-answer"><p data-i18n="faq_a12">No. This application does not support video or audio conversion. It focuses on images, documents, text, ebooks, spreadsheets, presentations, and web formats.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="about_title">About</h2>
+      </div>
+      <div class="info-card">
+        <p data-i18n="about_p1">All Files Converter is designed to make common file conversion simple, accessible, and easy to use. It runs entirely in your browser and requires no registration.</p>
+        <p data-i18n="about_p2">Our goal is to provide a fast, private, and free tool for everyday conversions without compromising your data.</p>
+        <p><strong data-i18n="about_dev">Developer:</strong> MRS Engineers BD</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRIVACY POLICY ============ -->
+  <section id="privacy" class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="privacy_title">Privacy Policy</h2>
+      </div>
+      <div class="info-card">
+        <p data-i18n="privacy_p1">Where supported, files are processed locally in your browser. We do not upload or store your files on our servers.</p>
+        <p data-i18n="privacy_p2">We do not require any account and do not log file contents. We use localStorage only to remember your theme and language preferences.</p>
+        <p data-i18n="privacy_p3">Our site may include external CDN resources and advertising technologies that operate under their own privacy policies. We recommend reviewing those policies if you have concerns.</p>
+        <p data-i18n="privacy_p4">You can clear your local browser data at any time to remove stored preferences.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2 data-i18n="contact_title">Contact</h2>
+        <p data-i18n="contact_sub">Have a question or feedback? We'd love to hear from you.</p>
+      </div>
+      <div class="info-card text-center">
+        <p style="font-size:0.9rem; color:var(--text-secondary); margin-bottom:8px;" data-i18n="contact_email_label">Email us at:</p>
+        <a href="mailto:mrs.engineers.bd26@gmail.com" class="contact-email">✉️ mrs.engineers.bd26@gmail.com</a>
+        <div>
+          <a href="mailto:mrs.engineers.bd26@gmail.com" class="btn btn-primary btn-lg" data-i18n="contact_btn">Email Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="fb-logo">
+            <img src="https://pxdrop.online/raw/damksguhv1ts73cu8kl0" alt="All Files Converter logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="fb-fallback" aria-hidden="true">AFC</div>
+            <span data-i18n="brand">All Files Converter</span>
+          </div>
+          <p data-i18n="footer_desc">Convert Files. Simply. Freely.</p>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer_links">Quick Links</h4>
+          <ul>
+            <li><a href="#home" data-i18n="nav_home">Home</a></li>
+            <li><a href="#features" data-i18n="nav_features">Features</a></li>
+            <li><a href="#how-to-use" data-i18n="nav_how">How to Use</a></li>
+            <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4 data-i18n="footer_more">More</h4>
+          <ul>
+            <li><a href="#about" data-i18n="nav_about">About</a></li>
+            <li><a href="#privacy" data-i18n="privacy_title">Privacy Policy</a></li>
+            <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="dev" data-i18n="footer_dev">Developed by MRS Engineers BD</p>
+        <p><a href="mailto:mrs.engineers.bd26@gmail.com">mrs.engineers.bd26@gmail.com</a></p>
+        <p data-i18n="footer_copy">© 2026 All Files Converter. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ JAVASCRIPT ============ -->
+  <script>
+  (function() {
+    'use strict';
+
+    // ============================================================
+    // TRANSLATIONS
+    // ============================================================
+    const i18n = {
+      en: {
+        brand: 'All Files Converter',
+        nav_home: 'Home', nav_features: 'Features', nav_how: 'How to Use', nav_faq: 'FAQ', nav_about: 'About', nav_contact: 'Contact',
+        hero_title: 'All Files Converter',
+        hero_tagline: 'Convert Files. Simply. Freely.',
+        hero_desc: 'Convert supported images, documents, text, spreadsheets, presentations and ebooks online for free.',
+        hero_cta: 'Start Converting', hero_how: 'How It Works',
+        tab_upload: 'Upload File', tab_paste: 'Paste Text',
+        drop_title: 'Drop your file here', drop_sub: 'or click to browse', browse_btn: 'Browse Files',
+        convert_to: 'Convert To', convert_now: 'Convert Now',
+        select_output_format: 'Select Output Format',
+        quality_title: 'Output Quality',
+        ad_label: 'Advertisement',
+        features_title: 'Why Choose Us', features_sub: 'Everything you need for simple file conversion.',
+        feat_noreg: 'No Registration', feat_noreg_desc: 'Start converting immediately. No account or email required.',
+        feat_free: 'Free to Use', feat_free_desc: 'All supported conversions are completely free.',
+        feat_formats: 'Multiple Formats', feat_formats_desc: 'Images, documents, text, spreadsheets and more.',
+        feat_easy: 'Easy Conversion', feat_easy_desc: 'Simple workflow: select, choose, convert, download.',
+        feat_privacy: 'Privacy Focused', feat_privacy_desc: 'Files are processed locally in your browser where supported.',
+        feat_browser: 'Browser-Based', feat_browser_desc: 'No server uploads for supported conversions.',
+        feat_quality: 'High-Quality Output', feat_quality_desc: 'Preserve resolution and formatting where possible.',
+        feat_drag: 'Drag & Drop', feat_drag_desc: 'Easily drop files into the converter.',
+        feat_mobile: 'Mobile Friendly', feat_mobile_desc: 'Works beautifully on phones and tablets.',
+        feat_theme: 'Dark / Light Mode', feat_theme_desc: 'Choose the theme that suits your eyes.',
+        feat_lang: 'BN / EN', feat_lang_desc: 'Full interface support for Bengali and English.',
+        feat_simple: 'Simple Interface', feat_simple_desc: 'Clean, modern, and clutter-free design.',
+        how_title: 'How to Use', how_sub: 'Convert your files in just a few simple steps.',
+        step1_title: 'Select or Drop File', step1_desc: 'Choose a file from your device or drag & drop it.',
+        step2_title: 'Choose Output Format', step2_desc: 'Pick the format you want to convert to.',
+        step3_title: 'Click Convert Now', step3_desc: 'Start the conversion process.',
+        step4_title: 'Wait for Conversion', step4_desc: 'The file is processed locally in your browser.',
+        step5_title: 'Download Result', step5_desc: 'Save your converted file to your device.',
+        how_text_title: 'Using Paste Text',
+        how_text_desc: 'Switch to the "Paste Text" tab, type or paste your content, select an output format (TXT, HTML, RTF, PDF, DOCX), and click Convert Now. This is ideal for quick notes and snippets.',
+        formats_title: 'Supported Formats', formats_sub: 'Formats available for conversion in browser-only mode.',
+        fmt_supported: 'Fully Supported', fmt_partial: 'Limited / Partial', fmt_browser: 'Browser-Dependent',
+        faq_title: 'Frequently Asked Questions', faq_sub: 'Answers to common questions about All Files Converter.',
+        faq_q1: 'What is All Files Converter?', faq_a1: 'It is a free browser-based tool that converts supported image, document, text, and spreadsheet files without requiring registration.',
+        faq_q2: 'Is registration required?', faq_a2: 'No. You can use the converter immediately without creating an account.',
+        faq_q3: 'Is it free?', faq_a3: 'Yes, all supported conversions are completely free to use.',
+        faq_q4: 'Are my files uploaded to a server?', faq_a4: 'For most supported conversions, files are processed locally in your browser. We do not permanently store your files.',
+        faq_q5: 'Which formats are supported?', faq_a5: 'We support many image formats (JPG, JPEG, PNG, GIF, WEBP, BMP, SVG), documents (PDF, TXT, DOC, DOCX, ODT, RTF, EPUB, HTML), presentations (PPTX), and spreadsheets (XLSX, XLS, CSV).',
+        faq_q6: 'Can I convert images?', faq_a6: 'Yes, you can convert between common image formats and create PDFs from images.',
+        faq_q7: 'Can I convert documents?', faq_a7: 'Yes, we support text extraction and format conversion for many document types, including TXT, HTML, RTF, and PDF generation.',
+        faq_q8: 'Can I convert text by pasting it?', faq_a8: 'Absolutely. Use the "Paste Text" tab to enter or paste text and convert it to TXT, HTML, RTF, PDF, or DOCX.',
+        faq_q9: 'Why are some conversions unavailable?', faq_a9: 'Some complex conversions (like advanced DOCX or PPTX rendering) are not fully reliable in a browser-only environment. We only list conversions that actually work.',
+        faq_q10: 'Is there a file-size limit?', faq_a10: 'Since processing is local, extremely large files may exceed browser memory. We recommend files under 50 MB.',
+        faq_q11: 'Can I use it on mobile?', faq_a11: 'Yes, the application is fully responsive and works on smartphones and tablets.',
+        faq_q12: 'Does it convert video or audio?', faq_a12: 'No. This application does not support video or audio conversion.',
+        about_title: 'About',
+        about_p1: 'All Files Converter is designed to make common file conversion simple, accessible, and easy to use.',
+        about_p2: 'Our goal is to provide a fast, private, and free tool for everyday conversions.',
+        about_dev: 'Developer:',
+        privacy_title: 'Privacy Policy',
+        privacy_p1: 'Where supported, files are processed locally in your browser. We do not upload or store your files on our servers.',
+        privacy_p2: 'We do not require any account and do not log file contents. We use localStorage only to remember your theme and language preferences.',
+        privacy_p3: 'Our site may include external CDN resources and advertising technologies that operate under their own privacy policies.',
+        privacy_p4: 'You can clear your local browser data at any time to remove stored preferences.',
+        contact_title: 'Contact', contact_sub: "Have a question or feedback? We'd love to hear from you.",
+        contact_email_label: 'Email us at:', contact_btn: 'Email Us',
+        footer_desc: 'Convert Files. Simply. Freely.',
+        footer_links: 'Quick Links', footer_more: 'More',
+        footer_dev: 'Developed by MRS Engineers BD',
+        footer_copy: '© 2026 All Files Converter. All rights reserved.',
+        err_no_file: 'Please select a file first.',
+        err_no_text: 'Please enter some text to convert.',
+        err_unsupported: 'This file type is not supported for conversion.',
+        err_conversion: 'Conversion failed. The file may be corrupted or the format is not supported.',
+        err_large: 'This file is very large. Browser memory may be insufficient. Please try a smaller file.',
+        err_lib: 'A required library failed to load. Please check your connection and refresh.',
+        err_no_format: 'Please select an output format.',
+        err_target_unsupported: 'This conversion is not currently available in browser-only mode.',
+        success_msg: 'Conversion complete!',
+        processing: 'Processing...',
+        convert_another: 'Convert Another File',
+        download: 'Download',
+        format: 'Format',
+        size: 'Size',
+        quality_max: 'Maximum',
+        quality_high: 'High',
+        quality_medium: 'Medium',
+        quality_custom: 'Custom',
+        fmt_jpg: 'JPEG image', fmt_jpeg: 'JPEG image', fmt_png: 'PNG image', fmt_gif: 'GIF image',
+        fmt_webp: 'WebP image', fmt_bmp: 'BMP image', fmt_svg: 'SVG vector',
+        fmt_pdf: 'PDF document', fmt_txt: 'Plain text', fmt_doc: 'Word (legacy)',
+        fmt_docx: 'Word document', fmt_odt: 'OpenDocument', fmt_rtf: 'Rich Text',
+        fmt_epub: 'EPUB ebook', fmt_html: 'HTML document', fmt_pptx: 'PowerPoint',
+        fmt_xlsx: 'Excel workbook', fmt_xls: 'Excel (legacy)', fmt_csv: 'CSV spreadsheet',
+        badge_limited: 'Limited', badge_browser: 'Browser'
+      },
+      bn: {
+        brand: 'অল ফাইলস কনভার্টার',
+        nav_home: 'হোম', nav_features: 'বৈশিষ্ট্য', nav_how: 'ব্যবহারবিধি', nav_faq: 'সাধারণ প্রশ্ন', nav_about: 'পরিচিতি', nav_contact: 'যোগাযোগ',
+        hero_title: 'অল ফাইলস কনভার্টার',
+        hero_tagline: 'ফাইল রূপান্তর করুন। সহজে। ফ্রি।',
+        hero_desc: 'সমর্থিত ছবি, ডকুমেন্ট, টেক্সট, স্প্রেডশিট, প্রেজেন্টেশন এবং ইবুক অনলাইনে বিনামূল্যে রূপান্তর করুন।',
+        hero_cta: 'রূপান্তর শুরু করুন', hero_how: 'কীভাবে কাজ করে',
+        tab_upload: 'ফাইল আপলোড', tab_paste: 'টেক্সট পেস্ট',
+        drop_title: 'আপনার ফাইল এখানে ড্রপ করুন', drop_sub: 'অথবা ব্রাউজ করতে ক্লিক করুন', browse_btn: 'ফাইল ব্রাউজ করুন',
+        convert_to: 'রূপান্তর করুন', convert_now: 'এখনই রূপান্তর করুন',
+        select_output_format: 'Output Format নির্বাচন করুন',
+        quality_title: 'আউটপুট গুণমান',
+        ad_label: 'বিজ্ঞাপন',
+        features_title: 'কেন আমাদের বেছে নেবেন', features_sub: 'সহজ ফাইল রূপান্তরের জন্য প্রয়োজনীয় সবকিছু।',
+        feat_noreg: 'রেজিস্ট্রেশন নেই', feat_noreg_desc: 'অবিলম্বে রূপান্তর শুরু করুন। অ্যাকাউন্ট বা ইমেইল প্রয়োজন নেই।',
+        feat_free: 'ফ্রি ব্যবহার', feat_free_desc: 'সমস্ত সমর্থিত রূপান্তর সম্পূর্ণ বিনামূল্যে।',
+        feat_formats: 'একাধিক ফরম্যাট', feat_formats_desc: 'ছবি, ডকুমেন্ট, টেক্সট, স্প্রেডশিট এবং আরও অনেক কিছু।',
+        feat_easy: 'সহজ রূপান্তর', feat_easy_desc: 'সহজ ধাপ: নির্বাচন, বাছাই, রূপান্তর, ডাউনলোড।',
+        feat_privacy: 'গোপনীয়তা-কেন্দ্রিক', feat_privacy_desc: 'যেখানে সমর্থিত, ফাইলগুলি আপনার ব্রাউজারে স্থানীয়ভাবে প্রক্রিয়া করা হয়।',
+        feat_browser: 'ব্রাউজার-ভিত্তিক', feat_browser_desc: 'সমর্থিত রূপান্তরের জন্য কোনো সার্ভার আপলোড নেই।',
+        feat_quality: 'উচ্চ-মানের আউটপুট', feat_quality_desc: 'যেখানে সম্ভব রেজোলিউশন ও ফরম্যাটিং সংরক্ষণ করুন।',
+        feat_drag: 'ড্র্যাগ ও ড্রপ', feat_drag_desc: 'সহজে ফাইল কনভার্টারে ড্রপ করুন।',
+        feat_mobile: 'মোবাইল বান্ধব', feat_mobile_desc: 'ফোন ও ট্যাবলেটে সুন্দরভাবে কাজ করে।',
+        feat_theme: 'ডার্ক / লাইট মোড', feat_theme_desc: 'আপনার চোখের জন্য উপযুক্ত থিম বেছে নিন।',
+        feat_lang: 'বাংলা / ইংরেজি', feat_lang_desc: 'বাংলা ও ইংরেজির জন্য সম্পূর্ণ ইন্টারফেস সমর্থন।',
+        feat_simple: 'সহজ ইন্টারফেস', feat_simple_desc: 'পরিষ্কার, আধুনিক, ঝামেলাহীন ডিজাইন।',
+        how_title: 'কীভাবে ব্যবহার করবেন', how_sub: 'মাত্র কয়েকটি সহজ ধাপে আপনার ফাইল রূপান্তর করুন।',
+        step1_title: 'ফাইল নির্বাচন বা ড্রপ', step1_desc: 'আপনার ডিভাইস থেকে একটি ফাইল চয়ন করুন বা ড্র্যাগ ও ড্রপ করুন।',
+        step2_title: 'আউটপুট ফরম্যাট চয়ন করুন', step2_desc: 'আপনি যে ফরম্যাটে রূপান্তর করতে চান তা বেছে নিন।',
+        step3_title: 'এখনই রূপান্তর ক্লিক করুন', step3_desc: 'রূপান্তর প্রক্রিয়া শুরু করুন।',
+        step4_title: 'রূপান্তরের জন্য অপেক্ষা করুন', step4_desc: 'ফাইলটি আপনার ব্রাউজারে স্থানীয়ভাবে প্রক্রিয়া করা হয়।',
+        step5_title: 'ফলাফল ডাউনলোড করুন', step5_desc: 'আপনার রূপান্তরিত ফাইলটি ডিভাইসে সংরক্ষণ করুন।',
+        how_text_title: 'টেক্সট পেস্ট ব্যবহার',
+        how_text_desc: '"টেক্সট পেস্ট" ট্যাবে যান, আপনার কন্টেন্ট টাইপ বা পেস্ট করুন, আউটপুট ফরম্যাট (TXT, HTML, RTF, PDF, DOCX) নির্বাচন করুন এবং এখনই রূপান্তর ক্লিক করুন।',
+        formats_title: 'সমর্থিত ফরম্যাট', formats_sub: 'ব্রাউজার-শুধু মোডে রূপান্তরের জন্য উপলব্ধ ফরম্যাট।',
+        fmt_supported: 'সম্পূর্ণ সমর্থিত', fmt_partial: 'সীমিত / আংশিক', fmt_browser: 'ব্রাউজার-নির্ভর',
+        faq_title: 'সাধারণ জিজ্ঞাসা', faq_sub: 'অল ফাইলস কনভার্টার সম্পর্কে সাধারণ প্রশ্নের উত্তর।',
+        faq_q1: 'অল ফাইলস কনভার্টার কী?', faq_a1: 'এটি একটি ফ্রি ব্রাউজার-ভিত্তিক টুল যা সমর্থিত ছবি, ডকুমেন্ট, টেক্সট এবং স্প্রেডশিট ফাইল রূপান্তর করে, রেজিস্ট্রেশন ছাড়াই।',
+        faq_q2: 'রেজিস্ট্রেশন প্রয়োজন?', faq_a2: 'না। আপনি অ্যাকাউন্ট তৈরি না করেই কনভার্টার ব্যবহার করতে পারেন।',
+        faq_q3: 'এটি কি ফ্রি?', faq_a3: 'হ্যাঁ, সমস্ত সমর্থিত রূপান্তর সম্পূর্ণ বিনামূল্যে।',
+        faq_q4: 'আমার ফাইল কি সার্ভারে আপলোড হয়?', faq_a4: 'বেশিরভাগ সমর্থিত রূপান্তরের জন্য ফাইলগুলি আপনার ব্রাউজারে স্থানীয়ভাবে প্রক্রিয়া করা হয়। আমরা আপনার ফাইল স্থায়ীভাবে সংরক্ষণ করি না।',
+        faq_q5: 'কোন ফরম্যাট সমর্থিত?', faq_a5: 'আমরা অনেক ছবি ফরম্যাট (JPG, JPEG, PNG, GIF, WEBP, BMP, SVG), ডকুমেন্ট (PDF, TXT, DOC, DOCX, ODT, RTF, EPUB, HTML), প্রেজেন্টেশন (PPTX) এবং স্প্রেডশিট (XLSX, XLS, CSV) সমর্থন করি।',
+        faq_q6: 'আমি কি ছবি রূপান্তর করতে পারি?', faq_a6: 'হ্যাঁ, আপনি সাধারণ ছবি ফরম্যাটের মধ্যে রূপান্তর করতে পারেন এবং ছবি থেকে PDF তৈরি করতে পারেন।',
+        faq_q7: 'আমি কি ডকুমেন্ট রূপান্তর করতে পারি?', faq_a7: 'হ্যাঁ, আমরা TXT, HTML, RTF এবং PDF তৈরি সহ অনেক ডকুমেন্ট টাইপের জন্য টেক্সট এক্সট্র্যাকশন ও ফরম্যাট রূপান্তর সমর্থন করি।',
+        faq_q8: 'আমি কি টেক্সট পেস্ট করে রূপান্তর করতে পারি?', faq_a8: 'অবশ্যই। "টেক্সট পেস্ট" ট্যাব ব্যবহার করে টেক্সট লিখুন বা পেস্ট করুন এবং TXT, HTML, RTF, PDF, বা DOCX-এ রূপান্তর করুন।',
+        faq_q9: 'কিছু রূপান্তর কেন অনুপলব্ধ?', faq_a9: 'কিছু জটিল রূপান্তর ব্রাউজার-শুধু পরিবেশে সম্পূর্ণ নির্ভরযোগ্য নয়। আমরা শুধুমাত্র সেই রূপান্তরগুলি তালিকাভুক্ত করি যা সত্যিই কাজ করে।',
+        faq_q10: 'ফাইলের আকারের সীমা আছে?', faq_a10: 'যেহেতু প্রক্রিয়াকরণ স্থানীয়, অত্যন্ত বড় ফাইল ব্রাউজার মেমোরি ছাড়িয়ে যেতে পারে। আমরা ৫০ MB-এর নিচের ফাইল সুপারিশ করি।',
+        faq_q11: 'আমি কি মোবাইলে ব্যবহার করতে পারি?', faq_a11: 'হ্যাঁ, অ্যাপ্লিকেশনটি সম্পূর্ণ প্রতিক্রিয়াশীল এবং স্মার্টফোন ও ট্যাবলেটে কাজ করে।',
+        faq_q12: 'এটি কি ভিডিও বা অডিও রূপান্তর করে?', faq_a12: 'না। এই অ্যাপ্লিকেশনটি ভিডিও বা অডিও রূপান্তর সমর্থন করে না।',
+        about_title: 'পরিচিতি',
+        about_p1: 'অল ফাইলস কনভার্টার সাধারণ ফাইল রূপান্তরকে সহজ, অ্যাক্সেসযোগ্য এবং ব্যবহারে সুবিধাজনক করতে ডিজাইন করা হয়েছে।',
+        about_p2: 'আমাদের লক্ষ্য প্রতিদিনের রূপান্তরের জন্য একটি দ্রুত, গোপনীয় এবং ফ্রি টুল প্রদান করা।',
+        about_dev: 'ডেভেলপার:',
+        privacy_title: 'গোপনীয়তা নীতি',
+        privacy_p1: 'যেখানে সমর্থিত, ফাইলগুলি আপনার ব্রাউজারে স্থানীয়ভাবে প্রক্রিয়া করা হয়। আমরা আপনার ফাইল সার্ভারে আপলোড বা সংরক্ষণ করি না।',
+        privacy_p2: 'আমরা কোনো অ্যাকাউন্ট চাই না এবং ফাইলের বিষয়বস্তু লগ করি না। আমরা শুধুমাত্র থিম ও ভাষা পছন্দ মনে রাখতে localStorage ব্যবহার করি।',
+        privacy_p3: 'আমাদের সাইটে বাহ্যিক CDN সম্পদ এবং বিজ্ঞাপন প্রযুক্তি থাকতে পারে যা তাদের নিজস্ব গোপনীয়তা নীতির অধীনে পরিচালিত।',
+        privacy_p4: 'আপনি যেকোনো সময় আপনার স্থানীয় ব্রাউজার ডেটা মুছে ফেলতে পারেন।',
+        contact_title: 'যোগাযোগ', contact_sub: 'প্রশ্ন বা মতামত আছে? আমরা শুনতে চাই।',
+        contact_email_label: 'আমাদের ইমেইল করুন:', contact_btn: 'ইমেইল পাঠান',
+        footer_desc: 'ফাইল রূপান্তর করুন। সহজে। ফ্রি।',
+        footer_links: 'দ্রুত লিংক', footer_more: 'আরও',
+        footer_dev: 'ডেভেলপ করেছেন MRS Engineers BD',
+        footer_copy: '© ২০২৬ অল ফাইলস কনভার্টার। সর্বস্বত্ব সংরক্ষিত।',
+        err_no_file: 'অনুগ্রহ করে প্রথমে একটি ফাইল নির্বাচন করুন।',
+        err_no_text: 'রূপান্তর করতে কিছু টেক্সট লিখুন।',
+        err_unsupported: 'এই ফাইল প্রকার রূপান্তরের জন্য সমর্থিত নয়।',
+        err_conversion: 'রূপান্তর ব্যর্থ হয়েছে। ফাইলটি নষ্ট হতে পারে বা ফরম্যাট সমর্থিত নয়।',
+        err_large: 'এই ফাইলটি খুব বড়। ব্রাউজার মেমোরি যথেষ্ট নাও হতে পারে। অনুগ্রহ করে ছোট ফাইল চেষ্টা করুন।',
+        err_lib: 'একটি প্রয়োজনীয় লাইব্রেরি লোড করতে ব্যর্থ হয়েছে। সংযোগ পরীক্ষা করে রিফ্রেশ করুন।',
+        err_no_format: 'অনুগ্রহ করে একটি আউটপুট ফরম্যাট নির্বাচন করুন।',
+        err_target_unsupported: 'ব্রাউজার-অনলি মোডে এই রূপান্তর বর্তমানে উপলব্ধ নয়।',
+        success_msg: 'রূপান্তর সম্পন্ন!',
+        processing: 'প্রক্রিয়াকরণ...',
+        convert_another: 'আরেকটি ফাইল রূপান্তর করুন',
+        download: 'ডাউনলোড',
+        format: 'ফরম্যাট',
+        size: 'আকার',
+        quality_max: 'সর্বোচ্চ',
+        quality_high: 'উচ্চ',
+        quality_medium: 'মধ্যম',
+        quality_custom: 'কাস্টম',
+        fmt_jpg: 'JPEG ছবি', fmt_jpeg: 'JPEG ছবি', fmt_png: 'PNG ছবি', fmt_gif: 'GIF ছবি',
+        fmt_webp: 'WebP ছবি', fmt_bmp: 'BMP ছবি', fmt_svg: 'SVG ভেক্টর',
+        fmt_pdf: 'PDF ডকুমেন্ট', fmt_txt: 'সাধারণ টেক্সট', fmt_doc: 'Word (লিগ্যাসি)',
+        fmt_docx: 'Word ডকুমেন্ট', fmt_odt: 'OpenDocument', fmt_rtf: 'Rich Text',
+        fmt_epub: 'EPUB ইবুক', fmt_html: 'HTML ডকুমেন্ট', fmt_pptx: 'PowerPoint',
+        fmt_xlsx: 'Excel ওয়ার্কবুক', fmt_xls: 'Excel (লিগ্যাসি)', fmt_csv: 'CSV স্প্রেডশিট',
+        badge_limited: 'সীমিত', badge_browser: 'ব্রাউজার'
+      }
+    };
+
+    let currentLang = 'en';
+    let currentTheme = 'light';
+
+    // ============================================================
+    // HELPERS
+    // ============================================================
+    function $(id) { return document.getElementById(id); }
+    function qsa(sel) { return document.querySelectorAll(sel); }
+    function escapeHtml(str) {
+      if (str === null || str === undefined) return '';
+      return String(str).replace(/[&<>"']/g, function(m) {
+        return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[m];
+      });
+    }
+    function formatBytes(bytes) {
+      if (!bytes || isNaN(bytes)) return '—';
+      if (bytes === 0) return '0 B';
+      const k = 1024;
+      const sizes = ['B', 'KB', 'MB', 'GB'];
+      const i = Math.floor(Math.log(bytes) / Math.log(k));
+      return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+    }
+    function getExt(filename) {
+      if (!filename) return '';
+      const parts = filename.split('.');
+      return parts.length > 1 ? parts.pop().toLowerCase() : '';
+    }
+    function t(key) {
+      return (i18n[currentLang] && i18n[currentLang][key]) || (i18n.en[key]) || key;
+    }
+    function sanitizeSVG(svgText) {
+      let cleaned = svgText.replace(/<script[\s\S]*?<\/script>/gi, '');
+      cleaned = cleaned.replace(/\son\w+\s*=\s*"[^"]*"/gi, '');
+      cleaned = cleaned.replace(/\son\w+\s*=\s*'[^']*'/gi, '');
+      cleaned = cleaned.replace(/javascript:/gi, '');
+      return cleaned;
+    }
+
+    // ============================================================
+    // FORMAT REGISTRY — SINGLE SOURCE OF TRUTH
+    // ============================================================
+    const FORMAT_REGISTRY = {
+      jpg:  { category: 'images', mime: 'image/jpeg', status: 'supported', ext: 'jpg', icon: '🖼️', outputCapable: true },
+      jpeg: { category: 'images', mime: 'image/jpeg', status: 'supported', ext: 'jpeg', icon: '🖼️', outputCapable: true },
+      png:  { category: 'images', mime: 'image/png', status: 'supported', ext: 'png', icon: '🖼️', outputCapable: true },
+      gif:  { category: 'images', mime: 'image/gif', status: 'supported', ext: 'gif', icon: '🖼️', outputCapable: true },
+      webp: { category: 'images', mime: 'image/webp', status: 'supported', ext: 'webp', icon: '🖼️', outputCapable: true },
+      bmp:  { category: 'images', mime: 'image/bmp', status: 'supported', ext: 'bmp', icon: '🖼️', outputCapable: true },
+      svg:  { category: 'images', mime: 'image/svg+xml', status: 'partial', ext: 'svg', icon: '🖼️', outputCapable: false },
+      tiff: { category: 'images', mime: 'image/tiff', status: 'browser', ext: 'tiff', icon: '🖼️', outputCapable: false },
+      dng:  { category: 'images', mime: 'image/x-adobe-dng', status: 'browser', ext: 'dng', icon: '🖼️', outputCapable: false },
+      pdf:  { category: 'documents', mime: 'application/pdf', status: 'supported', ext: 'pdf', icon: '📄', outputCapable: true },
+      txt:  { category: 'text', mime: 'text/plain', status: 'supported', ext: 'txt', icon: '📝', outputCapable: true },
+      text: { category: 'text', mime: 'text/plain', status: 'supported', ext: 'text', icon: '📝', outputCapable: true },
+      doc:  { category: 'documents', mime: 'application/msword', status: 'browser', ext: 'doc', icon: '📄', outputCapable: false },
+      docx: { category: 'documents', mime: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', status: 'partial', ext: 'docx', icon: '📄', outputCapable: true },
+      odt:  { category: 'documents', mime: 'application/vnd.oasis.opendocument.text', status: 'partial', ext: 'odt', icon: '📄', outputCapable: true },
+      rtf:  { category: 'documents', mime: 'application/rtf', status: 'supported', ext: 'rtf', icon: '📄', outputCapable: true },
+      epub: { category: 'ebooks', mime: 'application/epub+zip', status: 'partial', ext: 'epub', icon: '📚', outputCapable: false },
+      html: { category: 'web', mime: 'text/html', status: 'supported', ext: 'html', icon: '🌐', outputCapable: true },
+      pptx: { category: 'presentations', mime: 'application/vnd.openxmlformats-officedocument.presentationml.presentation', status: 'partial', ext: 'pptx', icon: '📽️', outputCapable: false },
+      xlsx: { category: 'spreadsheets', mime: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', status: 'partial', ext: 'xlsx', icon: '📊', outputCapable: true },
+      xls:  { category: 'spreadsheets', mime: 'application/vnd.ms-excel', status: 'browser', ext: 'xls', icon: '📊', outputCapable: true },
+      csv:  { category: 'spreadsheets', mime: 'text/csv', status: 'supported', ext: 'csv', icon: '📊', outputCapable: true }
+    };
+
+    // ============================================================
+    // CONVERSION MATRIX — SINGLE SOURCE OF TRUTH
+    // Full capability list; actual implementation checks at conversion time.
+    // ============================================================
+    const CONVERSION_MATRIX = {
+      jpg:  ['png', 'jpeg', 'webp', 'bmp', 'gif', 'pdf'],
+      jpeg: ['png', 'jpg', 'webp', 'bmp', 'gif', 'pdf'],
+      png:  ['jpg', 'jpeg', 'webp', 'bmp', 'gif', 'pdf'],
+      gif:  ['png', 'jpg', 'jpeg', 'webp', 'bmp', 'pdf'],
+      webp: ['png', 'jpg', 'jpeg', 'bmp', 'gif', 'pdf'],
+      bmp:  ['png', 'jpg', 'jpeg', 'webp', 'gif', 'pdf'],
+      svg:  ['png', 'jpg', 'jpeg', 'webp', 'pdf'],
+      tiff: [],
+      dng:  [],
+      pdf:  ['jpg', 'jpeg', 'png', 'webp', 'txt', 'html', 'docx', 'odt', 'rtf'],
+      txt:  ['html', 'rtf', 'pdf', 'docx', 'odt'],
+      text: ['html', 'rtf', 'pdf', 'docx', 'odt', 'txt'],
+      doc:  [],
+      docx: ['txt', 'html', 'rtf', 'pdf', 'odt'],
+      odt:  ['txt', 'html', 'rtf', 'pdf', 'docx'],
+      rtf:  ['txt', 'html', 'pdf', 'docx', 'odt'],
+      epub: ['txt', 'html', 'pdf'],
+      html: ['txt', 'rtf', 'pdf', 'docx', 'odt'],
+      pptx: ['txt'],
+      xlsx: ['csv', 'xls', 'txt'],
+      xls:  ['csv', 'xlsx', 'txt'],
+      csv:  ['xlsx', 'xls', 'txt']
+    };
+
+    // ============================================================
+    // THEME
+    // ============================================================
+    function applyTheme(theme) {
+      currentTheme = theme;
+      document.documentElement.setAttribute('data-theme', theme);
+      const btn = $('themeToggle');
+      if (btn) btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+      try { localStorage.setItem('afc_theme', theme); } catch(e) {}
+    }
+    function initTheme() {
+      let saved = null;
+      try { saved = localStorage.getItem('afc_theme'); } catch(e) {}
+      if (saved) { applyTheme(saved); return; }
+      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+      applyTheme(prefersDark ? 'dark' : 'light');
+    }
+    $('themeToggle').addEventListener('click', function() {
+      applyTheme(currentTheme === 'dark' ? 'light' : 'dark');
+    });
+
+    // ============================================================
+    // LANGUAGE
+    // ============================================================
+    function applyLanguage(lang) {
+      currentLang = lang;
+      document.documentElement.lang = lang === 'bn' ? 'bn' : 'en';
+      qsa('[data-i18n]').forEach(function(el) {
+        const key = el.getAttribute('data-i18n');
+        if (key && t(key)) el.textContent = t(key);
+      });
+      $('langEn').classList.toggle('active', lang === 'en');
+      $('langBn').classList.toggle('active', lang === 'bn');
+      const ta = $('pasteText');
+      if (ta) ta.placeholder = lang === 'bn' ? 'এখানে আপনার টেক্সট পেস্ট বা টাইপ করুন...' : 'Paste or type your text here...';
+      refreshTriggerLabels();
+      renderUploadPopoverItems();
+      renderPastePopoverItems();
+      try { localStorage.setItem('afc_lang', lang); } catch(e) {}
+    }
+    function initLanguage() {
+      let saved = null;
+      try { saved = localStorage.getItem('afc_lang'); } catch(e) {}
+      applyLanguage(saved === 'bn' ? 'bn' : 'en');
+    }
+    $('langEn').addEventListener('click', function() { applyLanguage('en'); });
+    $('langBn').addEventListener('click', function() { applyLanguage('bn'); });
+
+    // ============================================================
+    // MOBILE MENU
+    // ============================================================
+    const hamburger = $('hamburger');
+    const mobileMenu = $('mobileMenu');
+    hamburger.addEventListener('click', function() {
+      const isOpen = mobileMenu.classList.toggle('open');
+      hamburger.classList.toggle('open', isOpen);
+      hamburger.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+    mobileMenu.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        mobileMenu.classList.remove('open');
+        hamburger.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // ============================================================
+    // FAQ ACCORDION
+    // ============================================================
+    qsa('.faq-question').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        const item = btn.parentElement;
+        const isOpen = item.classList.contains('open');
+        qsa('.faq-item').forEach(function(i) { i.classList.remove('open'); });
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+
+    // ============================================================
+    // TABS
+    // ============================================================
+    const tabUpload = $('tabUpload');
+    const tabPaste = $('tabPaste');
+    const panelUpload = $('panelUpload');
+    const panelPaste = $('panelPaste');
+
+    tabUpload.addEventListener('click', function() {
+      tabUpload.classList.add('active'); tabUpload.setAttribute('aria-selected', 'true');
+      tabPaste.classList.remove('active'); tabPaste.setAttribute('aria-selected', 'false');
+      panelUpload.classList.remove('hidden');
+      panelPaste.classList.add('hidden');
+    });
+    tabPaste.addEventListener('click', function() {
+      tabPaste.classList.add('active'); tabPaste.setAttribute('aria-selected', 'true');
+      tabUpload.classList.remove('active'); tabUpload.setAttribute('aria-selected', 'false');
+      panelPaste.classList.remove('hidden');
+      panelUpload.classList.add('hidden');
+    });
+
+    // ============================================================
+    // STATE
+    // ============================================================
+    let selectedFile = null;
+    let selectedFormatUpload = null;
+    let selectedQualityUpload = 'max';
+    let customQualityUpload = 95;
+    let selectedFormatPaste = null;
+    let currentResultUrl = null;
+
+    // ============================================================
+    // FILE DETECTION
+    // ============================================================
+    function detectFormat(file) {
+      const ext = getExt(file.name);
+      const mime = file.type || '';
+      if (FORMAT_REGISTRY[ext]) {
+        return { ext: ext, registry: FORMAT_REGISTRY[ext], mime: mime || FORMAT_REGISTRY[ext].mime };
+      }
+      for (const key in FORMAT_REGISTRY) {
+        if (FORMAT_REGISTRY[key].mime === mime) {
+          return { ext: key, registry: FORMAT_REGISTRY[key], mime: mime };
+        }
+      }
+      return { ext: ext, registry: null, mime: mime };
+    }
+
+    // ============================================================
+    // DOM REFS
+    // ============================================================
+    const uploadZone = $('uploadZone');
+    const fileInput = $('fileInput');
+    const browseBtn = $('browseBtn');
+    const fileCard = $('fileCard');
+    const removeFileBtn = $('removeFile');
+    const formatSectionUpload = $('formatSectionUpload');
+    const formatTriggerUpload = $('formatTriggerUpload');
+    const formatTriggerIconUpload = $('formatTriggerIconUpload');
+    const formatTriggerNameUpload = $('formatTriggerNameUpload');
+    const formatTriggerDescUpload = $('formatTriggerDescUpload');
+    const formatPopoverUpload = $('formatPopoverUpload');
+    const formatPopoverBodyUpload = $('formatPopoverBodyUpload');
+    const qualityPanelUpload = $('qualityPanelUpload');
+    const qualityOptionsUpload = $('qualityOptionsUpload');
+    const qualitySliderWrapUpload = $('qualitySliderWrapUpload');
+    const qualitySliderUpload = $('qualitySliderUpload');
+    const qualityValueUpload = $('qualityValueUpload');
+    const convertBtnUpload = $('convertBtnUpload');
+    const statusMsg = $('statusMsg');
+    const resultCard = $('resultCard');
+
+    const pasteText = $('pasteText');
+    const formatTriggerPaste = $('formatTriggerPaste');
+    const formatTriggerIconPaste = $('formatTriggerIconPaste');
+    const formatTriggerNamePaste = $('formatTriggerNamePaste');
+    const formatTriggerDescPaste = $('formatTriggerDescPaste');
+    const formatPopoverPaste = $('formatPopoverPaste');
+    const formatPopoverBodyPaste = $('formatPopoverBodyPaste');
+    const convertBtnPaste = $('convertBtnPaste');
+
+    // ============================================================
+    // STATUS / RESULT HELPERS
+    // ============================================================
+    function showStatus(msg, type) {
+      statusMsg.textContent = msg;
+      statusMsg.className = 'status-msg ' + (type || 'info');
+      statusMsg.classList.remove('hidden');
+    }
+    function hideStatus() {
+      statusMsg.classList.add('hidden');
+    }
+    function clearResult() {
+      if (currentResultUrl) {
+        try { URL.revokeObjectURL(currentResultUrl); } catch(e) {}
+        currentResultUrl = null;
+      }
+      resultCard.innerHTML = '';
+      resultCard.classList.add('hidden');
+    }
+    function showResult(origName, outName, outFormat, outSize, blobUrl) {
+      clearResult();
+      currentResultUrl = blobUrl;
+      const icon = document.createElement('div');
+      icon.className = 'success-icon';
+      icon.textContent = '✅';
+      const h3 = document.createElement('h3');
+      h3.textContent = t('success_msg');
+      const meta = document.createElement('div');
+      meta.className = 'result-meta';
+      meta.innerHTML = escapeHtml(origName) + ' → ' + escapeHtml(outName) + '<br>' +
+        t('format') + ': ' + escapeHtml(outFormat.toUpperCase()) +
+        (outSize ? ' · ' + t('size') + ': ' + escapeHtml(outSize) : '');
+      const actions = document.createElement('div');
+      actions.className = 'result-actions';
+      const dl = document.createElement('a');
+      dl.className = 'btn btn-primary';
+      dl.href = blobUrl;
+      dl.download = outName;
+      dl.textContent = '⬇️ ' + t('download');
+      const again = document.createElement('button');
+      again.className = 'btn btn-outline';
+      again.textContent = '🔄 ' + t('convert_another');
+      again.addEventListener('click', function() {
+        resetUploadState();
+        clearResult();
+        hideStatus();
+      });
+      actions.appendChild(dl);
+      actions.appendChild(again);
+      resultCard.appendChild(icon);
+      resultCard.appendChild(h3);
+      resultCard.appendChild(meta);
+      resultCard.appendChild(actions);
+      resultCard.classList.remove('hidden');
+    }
+
+    function getFileIcon(ext) {
+      if (['jpg','jpeg','png','gif','webp','bmp','svg','tiff','dng'].includes(ext)) return '🖼️';
+      if (['pdf'].includes(ext)) return '📕';
+      if (['docx','doc','odt','rtf','txt','text'].includes(ext)) return '📄';
+      if (['xlsx','xls','csv'].includes(ext)) return '📊';
+      if (['pptx'].includes(ext)) return '📽️';
+      if (['epub'].includes(ext)) return '📚';
+      if (['html'].includes(ext)) return '🌐';
+      return '📎';
+    }
+
+    // ============================================================
+    // FORMAT POPOVER SYSTEM
+    // ============================================================
+    let activePopover = null;
+
+    function openPopover(ctrl) {
+      if (activePopover && activePopover !== ctrl) closePopover(activePopover);
+      ctrl.trigger.classList.add('open');
+      ctrl.popover.classList.add('open');
+      ctrl.trigger.setAttribute('aria-expanded', 'true');
+      activePopover = ctrl;
+      if (window.matchMedia('(max-width: 640px)').matches) {
+        if (!ctrl.overlay) {
+          ctrl.overlay = document.createElement('div');
+          ctrl.overlay.className = 'format-overlay';
+          document.body.appendChild(ctrl.overlay);
+          ctrl.overlay.addEventListener('click', function() { closePopover(ctrl); });
+        }
+        requestAnimationFrame(function() { ctrl.overlay.classList.add('open'); });
+      }
+      setTimeout(function() {
+        const items = ctrl.body.querySelectorAll('.format-item:not(:disabled)');
+        if (items.length > 0) {
+          const selected = ctrl.body.querySelector('.format-item.selected:not(:disabled)');
+          (selected || items[0]).focus();
+        }
+      }, 60);
+    }
+
+    function closePopover(ctrl) {
+      ctrl.trigger.classList.remove('open');
+      ctrl.popover.classList.remove('open');
+      ctrl.trigger.setAttribute('aria-expanded', 'false');
+      if (ctrl.overlay) ctrl.overlay.classList.remove('open');
+      if (activePopover === ctrl) activePopover = null;
+    }
+
+    function togglePopover(ctrl) {
+      if (ctrl.popover.classList.contains('open')) closePopover(ctrl);
+      else openPopover(ctrl);
+    }
+
+    // ============================================================
+    // RENDER POPOVER ITEMS — SHOWS ALL FORMATS
+    // ============================================================
+    function renderPopoverItems(bodyEl, sourceExt, selectedFmt, isPasteMode) {
+      bodyEl.innerHTML = '';
+
+      let allowed = null;
+      if (isPasteMode) {
+        allowed = ['txt', 'html', 'rtf', 'pdf', 'docx', 'odt'];
+      } else if (sourceExt && CONVERSION_MATRIX[sourceExt]) {
+        allowed = CONVERSION_MATRIX[sourceExt];
+      }
+
+      const order = [
+        'jpg', 'jpeg', 'png', 'gif', 'webp', 'bmp', 'svg', 'tiff', 'dng',
+        'pdf', 'doc', 'docx', 'odt', 'rtf',
+        'txt', 'text', 'html',
+        'epub',
+        'xlsx', 'xls', 'csv',
+        'pptx'
+      ];
+
+      order.forEach(function(fmt) {
+        const reg = FORMAT_REGISTRY[fmt];
+        if (!reg) return;
+
+        // Determine if this format is genuinely available as output for this source
+        let isAllowed;
+        if (isPasteMode) {
+          isAllowed = allowed.indexOf(fmt) !== -1;
+        } else if (allowed === null) {
+          // No source selected yet
+          isAllowed = false;
+        } else {
+          isAllowed = allowed.indexOf(fmt) !== -1;
+        }
+
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'format-item' + (selectedFmt === fmt ? ' selected' : '');
+        btn.setAttribute('role', 'option');
+        btn.setAttribute('aria-selected', selectedFmt === fmt ? 'true' : 'false');
+        btn.setAttribute('data-format', fmt);
+        if (!isAllowed) {
+          btn.disabled = true;
+          btn.setAttribute('aria-disabled', 'true');
+        }
+
+        const icon = document.createElement('span');
+        icon.className = 'fi-icon';
+        icon.textContent = reg.icon || '📄';
+
+        const nameWrap = document.createElement('span');
+        nameWrap.className = 'fi-name';
+        const nameText = document.createElement('span');
+        nameText.className = 'fi-name-text';
+        nameText.textContent = fmt.toUpperCase();
+        nameWrap.appendChild(nameText);
+
+        if (!isAllowed) {
+          const badge = document.createElement('span');
+          badge.className = 'fi-badge browser';
+          badge.textContent = currentLang === 'bn' ? 'এই ইনপুটে নয়' : 'Unavailable for this input';
+          nameWrap.appendChild(badge);
+        } else if (reg.status === 'partial') {
+          const badge = document.createElement('span');
+          badge.className = 'fi-badge';
+          badge.textContent = t('badge_limited');
+          nameWrap.appendChild(badge);
+        } else if (reg.status === 'browser') {
+          const badge = document.createElement('span');
+          badge.className = 'fi-badge browser';
+          badge.textContent = t('badge_browser');
+          nameWrap.appendChild(badge);
+        }
+
+        const check = document.createElement('span');
+        check.className = 'fi-check';
+        check.textContent = '✓';
+
+        btn.appendChild(icon);
+        btn.appendChild(nameWrap);
+        btn.appendChild(check);
+
+        bodyEl.appendChild(btn);
+      });
+    }
+
+    // ============================================================
+    // POPOVER CONTROLLERS
+    // ============================================================
+    const uploadPopover = {
+      trigger: formatTriggerUpload,
+      popover: formatPopoverUpload,
+      body: formatPopoverBodyUpload,
+      overlay: null
+    };
+    const pastePopover = {
+      trigger: formatTriggerPaste,
+      popover: formatPopoverPaste,
+      body: formatPopoverBodyPaste,
+      overlay: null
+    };
+
+    function renderUploadPopoverItems() {
+      const sourceExt = selectedFile ? detectFormat(selectedFile).ext : null;
+      renderPopoverItems(uploadPopover.body, sourceExt, selectedFormatUpload, false);
+    }
+    function renderPastePopoverItems() {
+      renderPopoverItems(pastePopover.body, null, selectedFormatPaste, true);
+    }
+
+    formatTriggerUpload.addEventListener('click', function(e) {
+      e.stopPropagation();
+      togglePopover(uploadPopover);
+    });
+    formatTriggerUpload.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ' || e.key === 'ArrowDown') {
+        e.preventDefault();
+        openPopover(uploadPopover);
+      } else if (e.key === 'Escape') {
+        closePopover(uploadPopover);
+      }
+    });
+
+    formatTriggerPaste.addEventListener('click', function(e) {
+      e.stopPropagation();
+      togglePopover(pastePopover);
+    });
+    formatTriggerPaste.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ' || e.key === 'ArrowDown') {
+        e.preventDefault();
+        openPopover(pastePopover);
+      } else if (e.key === 'Escape') {
+        closePopover(pastePopover);
+      }
+    });
+
+    // ============================================================
+    // EVENT DELEGATION FOR OPTION SELECTION
+    // ============================================================
+    formatPopoverBodyUpload.addEventListener('click', function(e) {
+      const item = e.target.closest('.format-item');
+      if (!item) return;
+      if (item.disabled) return;
+      const fmt = item.getAttribute('data-format');
+      if (!fmt) return;
+      selectedFormatUpload = fmt;
+      convertBtnUpload.disabled = false;
+      renderUploadPopoverItems();
+      refreshTriggerLabels();
+      updateQualityPanel(fmt);
+      closePopover(uploadPopover);
+      formatTriggerUpload.focus();
+    });
+
+    formatPopoverBodyPaste.addEventListener('click', function(e) {
+      const item = e.target.closest('.format-item');
+      if (!item) return;
+      if (item.disabled) return;
+      const fmt = item.getAttribute('data-format');
+      if (!fmt) return;
+      selectedFormatPaste = fmt;
+      convertBtnPaste.disabled = pasteText.value.trim().length === 0;
+      renderPastePopoverItems();
+      refreshTriggerLabels();
+      closePopover(pastePopover);
+      formatTriggerPaste.focus();
+    });
+
+    [formatPopoverBodyUpload, formatPopoverBodyPaste].forEach(function(bodyEl) {
+      bodyEl.addEventListener('keydown', function(e) {
+        const items = Array.from(bodyEl.querySelectorAll('.format-item:not(:disabled)'));
+        const current = e.target.closest('.format-item');
+        if (!current) return;
+        const idx = items.indexOf(current);
+        if (e.key === 'ArrowDown') {
+          e.preventDefault();
+          const next = items[idx + 1] || items[0];
+          if (next) next.focus();
+        } else if (e.key === 'ArrowUp') {
+          e.preventDefault();
+          const prev = items[idx - 1] || items[items.length - 1];
+          if (prev) prev.focus();
+        } else if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          current.click();
+        } else if (e.key === 'Escape') {
+          e.preventDefault();
+          const ctrl = (bodyEl === formatPopoverBodyUpload) ? uploadPopover : pastePopover;
+          closePopover(ctrl);
+          ctrl.trigger.focus();
+        }
+      });
+    });
+
+    document.addEventListener('click', function(e) {
+      if (activePopover) {
+        const trig = activePopover.trigger;
+        const pop = activePopover.popover;
+        if (!trig.contains(e.target) && !pop.contains(e.target)) {
+          closePopover(activePopover);
+        }
+      }
+    });
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && activePopover) {
+        const trig = activePopover.trigger;
+        closePopover(activePopover);
+        trig.focus();
+      }
+    });
+
+    // ============================================================
+    // TRIGGER LABEL REFRESH
+    // ============================================================
+    function refreshTriggerLabels() {
+      if (selectedFormatUpload) {
+        const reg = FORMAT_REGISTRY[selectedFormatUpload] || {};
+        formatTriggerUpload.classList.remove('placeholder');
+        formatTriggerIconUpload.textContent = reg.icon || '📄';
+        formatTriggerNameUpload.textContent = selectedFormatUpload.toUpperCase();
+        formatTriggerDescUpload.textContent = t('fmt_' + selectedFormatUpload) || '';
+        formatTriggerDescUpload.classList.remove('hidden');
+      } else {
+        formatTriggerUpload.classList.add('placeholder');
+        formatTriggerIconUpload.textContent = '🎯';
+        formatTriggerNameUpload.textContent = t('select_output_format');
+        formatTriggerDescUpload.textContent = '';
+        formatTriggerDescUpload.classList.add('hidden');
+      }
+      if (selectedFormatPaste) {
+        const reg = FORMAT_REGISTRY[selectedFormatPaste] || {};
+        formatTriggerPaste.classList.remove('placeholder');
+        formatTriggerIconPaste.textContent = reg.icon || '📄';
+        formatTriggerNamePaste.textContent = selectedFormatPaste.toUpperCase();
+        formatTriggerDescPaste.textContent = t('fmt_' + selectedFormatPaste) || '';
+        formatTriggerDescPaste.classList.remove('hidden');
+      } else {
+        formatTriggerPaste.classList.add('placeholder');
+        formatTriggerIconPaste.textContent = '🎯';
+        formatTriggerNamePaste.textContent = t('select_output_format');
+        formatTriggerDescPaste.textContent = '';
+        formatTriggerDescPaste.classList.add('hidden');
+      }
+    }
+
+    // ============================================================
+    // QUALITY PANEL
+    // ============================================================
+    function updateQualityPanel(targetFmt) {
+      if (!targetFmt) {
+        qualityPanelUpload.classList.add('hidden');
+        return;
+      }
+      const lossy = ['jpg', 'jpeg', 'webp', 'pdf'];
+      if (lossy.indexOf(targetFmt) === -1) {
+        qualityPanelUpload.classList.add('hidden');
+        return;
+      }
+      qualityPanelUpload.classList.remove('hidden');
+      qualityOptionsUpload.innerHTML = '';
+      const levels = [
+        { key: 'max', label: t('quality_max'), value: 100 },
+        { key: 'high', label: t('quality_high'), value: 95 },
+        { key: 'medium', label: t('quality_medium'), value: 80 },
+        { key: 'custom', label: t('quality_custom'), value: customQualityUpload }
+      ];
+      levels.forEach(function(lv) {
+        const b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'quality-option' + (selectedQualityUpload === lv.key ? ' selected' : '');
+        b.textContent = lv.label;
+        b.addEventListener('click', function() {
+          selectedQualityUpload = lv.key;
+          if (lv.key === 'custom') {
+            qualitySliderWrapUpload.classList.remove('hidden');
+          } else {
+            qualitySliderWrapUpload.classList.add('hidden');
+            customQualityUpload = lv.value;
+            qualitySliderUpload.value = lv.value;
+            qualityValueUpload.textContent = lv.value + '%';
+          }
+          qualityOptionsUpload.querySelectorAll('.quality-option').forEach(function(x) { x.classList.remove('selected'); });
+          b.classList.add('selected');
+        });
+        qualityOptionsUpload.appendChild(b);
+      });
+      if (selectedQualityUpload === 'custom') {
+        qualitySliderWrapUpload.classList.remove('hidden');
+      } else {
+        qualitySliderWrapUpload.classList.add('hidden');
+      }
+    }
+
+    qualitySliderUpload.addEventListener('input', function() {
+      customQualityUpload = parseInt(qualitySliderUpload.value, 10);
+      qualityValueUpload.textContent = customQualityUpload + '%';
+    });
+
+    // ============================================================
+    // FILE HANDLING
+    // ============================================================
+    function resetUploadState() {
+      selectedFile = null;
+      selectedFormatUpload = null;
+      fileCard.classList.add('hidden');
+      formatSectionUpload.classList.add('hidden');
+      qualityPanelUpload.classList.add('hidden');
+      convertBtnUpload.disabled = true;
+      fileInput.value = '';
+      hideStatus();
+      clearResult();
+      refreshTriggerLabels();
+      if (uploadPopover.popover.classList.contains('open')) closePopover(uploadPopover);
+    }
+
+    function handleFileSelect(file) {
+      if (!file) return;
+      const MAX_WARN = 100 * 1024 * 1024;
+      if (file.size > MAX_WARN) {
+        showStatus(t('err_large'), 'warning');
+      }
+      selectedFile = file;
+      selectedFormatUpload = null;
+      selectedQualityUpload = 'max';
+      customQualityUpload = 95;
+      convertBtnUpload.disabled = true;
+      const detection = detectFormat(file);
+      const ext = detection.ext || 'unknown';
+      const reg = detection.registry;
+      $('fileName').textContent = file.name;
+      const metaParts = [];
+      metaParts.push(ext.toUpperCase());
+      metaParts.push(formatBytes(file.size));
+      if (file.type) metaParts.push(file.type);
+      else if (reg) metaParts.push(reg.mime);
+      $('fileMeta').textContent = metaParts.join(' · ');
+      $('fileIcon').textContent = getFileIcon(ext);
+      fileCard.classList.remove('hidden');
+      if (!reg) {
+        formatSectionUpload.classList.add('hidden');
+        qualityPanelUpload.classList.add('hidden');
+        showStatus(t('err_unsupported'), 'error');
+        return;
+      }
+      const allowed = CONVERSION_MATRIX[ext] || [];
+      if (allowed.length === 0) {
+        formatSectionUpload.classList.add('hidden');
+        qualityPanelUpload.classList.add('hidden');
+        showStatus(t('err_target_unsupported') + ' (' + ext.toUpperCase() + ')', 'error');
+        return;
+      }
+      hideStatus();
+      formatSectionUpload.classList.remove('hidden');
+      qualityPanelUpload.classList.add('hidden');
+      refreshTriggerLabels();
+      renderUploadPopoverItems();
+    }
+
+    uploadZone.addEventListener('click', function() { fileInput.click(); });
+    uploadZone.addEventListener('keydown', function(e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); fileInput.click(); }
+    });
+    browseBtn.addEventListener('click', function(e) { e.stopPropagation(); fileInput.click(); });
+    fileInput.addEventListener('change', function() {
+      if (fileInput.files.length > 0) handleFileSelect(fileInput.files[0]);
+    });
+    uploadZone.addEventListener('dragover', function(e) { e.preventDefault(); uploadZone.classList.add('dragover'); });
+    uploadZone.addEventListener('dragleave', function() { uploadZone.classList.remove('dragover'); });
+    uploadZone.addEventListener('drop', function(e) {
+      e.preventDefault(); uploadZone.classList.remove('dragover');
+      if (e.dataTransfer.files.length > 0) handleFileSelect(e.dataTransfer.files[0]);
+    });
+    removeFileBtn.addEventListener('click', function() { resetUploadState(); });
+
+    pasteText.addEventListener('input', function() {
+      convertBtnPaste.disabled = pasteText.value.trim().length === 0 || !selectedFormatPaste;
+    });
+
+    // ============================================================
+    // CONVERSION ENGINE
+    // ============================================================
+
+    function convertImage(file, targetFormat, quality, callback) {
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        const rawData = e.target.result;
+        const ext = getExt(file.name);
+        if (ext === 'svg') {
+          try {
+            const svgText = typeof rawData === 'string' ? rawData : new TextDecoder().decode(rawData);
+            const sanitized = sanitizeSVG(svgText);
+            const blob = new Blob([sanitized], { type: 'image/svg+xml' });
+            const url = URL.createObjectURL(blob);
+            const img = new Image();
+            img.onload = function() {
+              const w = img.naturalWidth || img.width || 800;
+              const h = img.naturalHeight || img.height || 600;
+              const canvas = document.createElement('canvas');
+              canvas.width = w;
+              canvas.height = h;
+              const ctx = canvas.getContext('2d');
+              if (targetFormat !== 'jpg' && targetFormat !== 'jpeg') {
+                ctx.clearRect(0, 0, w, h);
+              } else {
+                ctx.fillStyle = '#ffffff';
+                ctx.fillRect(0, 0, w, h);
+              }
+              ctx.drawImage(img, 0, 0, w, h);
+              URL.revokeObjectURL(url);
+              finishImageCanvas(canvas, targetFormat, quality, callback);
+            };
+            img.onerror = function() {
+              URL.revokeObjectURL(url);
+              callback(new Error(t('err_conversion')), null);
+            };
+            img.src = url;
+          } catch (err) {
+            callback(new Error(t('err_conversion')), null);
+          }
+          return;
+        }
+        const img = new Image();
+        img.onload = function() {
+          const w = img.naturalWidth || img.width;
+          const h = img.naturalHeight || img.height;
+          const canvas = document.createElement('canvas');
+          canvas.width = w;
+          canvas.height = h;
+          const ctx = canvas.getContext('2d');
+          if (targetFormat !== 'jpg' && targetFormat !== 'jpeg') {
+            ctx.clearRect(0, 0, w, h);
+          } else {
+            ctx.fillStyle = '#ffffff';
+            ctx.fillRect(0, 0, w, h);
+          }
+          ctx.drawImage(img, 0, 0, w, h);
+          finishImageCanvas(canvas, targetFormat, quality, callback);
+        };
+        img.onerror = function() {
+          callback(new Error(t('err_conversion')), null);
+        };
+        img.src = rawData;
+      };
+      reader.onerror = function() { callback(new Error(t('err_conversion')), null); };
+      if (getExt(file.name) === 'svg') {
+        reader.readAsText(file);
+      } else {
+        reader.readAsDataURL(file);
+      }
+    }
+
+    function finishImageCanvas(canvas, targetFormat, quality, callback) {
+      const q = (quality !== undefined && quality !== null) ? (quality / 100) : 0.95;
+      if (targetFormat === 'pdf') {
+        if (typeof window.jspdf === 'undefined' && typeof window.jsPDF === 'undefined') {
+          callback(new Error(t('err_lib')), null); return;
+        }
+        const jsPDF = window.jspdf ? window.jspdf.jsPDF : window.jsPDF;
+        const orientation = canvas.width > canvas.height ? 'l' : 'p';
+        const pdf = new jsPDF(orientation, 'px', [canvas.width, canvas.height]);
+        const imgData = canvas.toDataURL('image/jpeg', 0.95);
+        pdf.addImage(imgData, 'JPEG', 0, 0, canvas.width, canvas.height);
+        const blob = pdf.output('blob');
+        callback(null, { blob: blob, ext: 'pdf', mime: 'application/pdf' });
+        return;
+      }
+      let mime = 'image/png';
+      if (targetFormat === 'jpg' || targetFormat === 'jpeg') mime = 'image/jpeg';
+      else if (targetFormat === 'webp') mime = 'image/webp';
+      else if (targetFormat === 'bmp') mime = 'image/bmp';
+      else if (targetFormat === 'gif') mime = 'image/gif';
+      canvas.toBlob(function(blob) {
+        if (!blob) {
+          try {
+            const dataUrl = canvas.toDataURL(mime, q);
+            const byteString = atob(dataUrl.split(',')[1]);
+            const ab = new ArrayBuffer(byteString.length);
+            const ia = new Uint8Array(ab);
+            for (let i = 0; i < byteString.length; i++) ia[i] = byteString.charCodeAt(i);
+            blob = new Blob([ab], { type: mime });
+          } catch (err) {
+            callback(new Error(t('err_conversion')), null); return;
+          }
+        }
+        callback(null, { blob: blob, ext: targetFormat, mime: mime });
+      }, mime, q);
+    }
+
+    function convertText(text, targetFormat, callback) {
+      try {
+        let blob, mime;
+        if (targetFormat === 'txt' || targetFormat === 'text') {
+          blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+          mime = 'text/plain';
+        } else if (targetFormat === 'html') {
+          const html = '<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="UTF-8">\n<meta name="viewport" content="width=device-width, initial-scale=1.0">\n<title>Converted Document</title>\n<style>body{font-family:system-ui,-apple-system,sans-serif;line-height:1.7;max-width:800px;margin:40px auto;padding:0 20px;color:#222;}pre{white-space:pre-wrap;word-wrap:break-word;font-family:inherit;}</style>\n</head>\n<body>\n<pre>' + escapeHtml(text) + '</pre>\n</body>\n</html>';
+          blob = new Blob([html], { type: 'text/html;charset=utf-8' });
+          mime = 'text/html';
+        } else if (targetFormat === 'rtf') {
+          const escaped = text
+            .replace(/\\/g, '\\\\')
+            .replace(/{/g, '\\{')
+            .replace(/}/g, '\\}')
+            .replace(/\n/g, '\\par\n');
+          const rtf = '{\\rtf1\\ansi\\deff0{\\fonttbl{\\f0 Calibri;}}{\\colortbl;\\red0\\green0\\blue0;}\\f0\\fs22\\cf1 ' + escaped + '}';
+          blob = new Blob([rtf], { type: 'application/rtf' });
+          mime = 'application/rtf';
+        } else if (targetFormat === 'pdf') {
+          if (typeof window.jspdf === 'undefined' && typeof window.jsPDF === 'undefined') {
+            callback(new Error(t('err_lib')), null); return;
+          }
+          const jsPDF = window.jspdf ? window.jspdf.jsPDF : window.jsPDF;
+          const pdf = new jsPDF({ unit: 'pt', format: 'a4' });
+          const margin = 40;
+          const pageWidth = pdf.internal.pageSize.getWidth();
+          const pageHeight = pdf.internal.pageSize.getHeight();
+          const maxWidth = pageWidth - margin * 2;
+          pdf.setFont('helvetica');
+          pdf.setFontSize(11);
+          const lines = text.split('\n');
+          let y = margin + 12;
+          lines.forEach(function(line) {
+            if (line === '') { y += 14; return; }
+            const wrapped = pdf.splitTextToSize(line, maxWidth);
+            wrapped.forEach(function(wl) {
+              if (y > pageHeight - margin) {
+                pdf.addPage();
+                y = margin + 12;
+              }
+              pdf.text(wl, margin, y);
+              y += 14;
+            });
+          });
+          const blob = pdf.output('blob');
+          callback(null, { blob: blob, ext: 'pdf', mime: 'application/pdf' });
+          return;
+        } else if (targetFormat === 'docx') {
+          if (typeof JSZip === 'undefined') { callback(new Error(t('err_lib')), null); return; }
+          const zip = new JSZip();
+          const escapedXml = escapeHtml(text)
+            .replace(/\n/g, '</w:t></w:r><w:r><w:t xml:space="preserve">')
+            .replace(/ /g, ' ');
+          zip.file('[Content_Types].xml',
+            '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>' +
+            '<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">' +
+            '<Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/>' +
+            '<Default Extension="xml" ContentType="application/xml"/>' +
+            '<Override PartName="/word/document.xml" ContentType="application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml"/>' +
+            '</Types>');
+          zip.folder('_rels').file('.rels',
+            '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>' +
+            '<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">' +
+            '<Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/officeDocument" Target="word/document.xml"/>' +
+            '</Relationships>');
+          zip.folder('word').file('document.xml',
+            '<?xml version="1.0" encoding="UTF-8" standalone="yes"?>' +
+            '<w:document xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main">' +
+            '<w:body><w:p><w:r><w:t xml:space="preserve">' + escapedXml + '</w:t></w:r></w:p></w:body>' +
+            '</w:document>');
+          zip.generateAsync({ type: 'blob', mimeType: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' })
+            .then(function(blob) { callback(null, { blob: blob, ext: 'docx', mime: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' }); })
+            .catch(function() { callback(new Error(t('err_conversion')), null); });
+          return;
+        } else if (targetFormat === 'odt') {
+          if (typeof JSZip === 'undefined') { callback(new Error(t('err_lib')), null); return; }
+          const zip = new JSZip();
+          const escapedXml = escapeHtml(text).replace(/\n/g, '</text:p><text:p>');
+          zip.file('mimetype', 'application/vnd.oasis.opendocument.text', { compression: 'STORE' });
+          zip.file('content.xml',
+            '<?xml version="1.0" encoding="UTF-8"?>' +
+            '<office:document-content xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" ' +
+            'xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" office:version="1.2">' +
+            '<office:body><office:text><text:p>' + escapedXml + '</text:p></office:text></office:body>' +
+            '</office:document-content>');
+          zip.file('META-INF/manifest.xml',
+            '<?xml version="1.0" encoding="UTF-8"?>' +
+            '<manifest:manifest xmlns:manifest="urn:oasis:names:tc:opendocument:xmlns:manifest:1.0" manifest:version="1.2">' +
+            '<manifest:file-entry manifest:full-path="/" manifest:media-type="application/vnd.oasis.opendocument.text"/>' +
+            '<manifest:file-entry manifest:full-path="content.xml" manifest:media-type="text/xml"/>' +
+            '</manifest:manifest>');
+          zip.generateAsync({ type: 'blob', mimeType: 'application/vnd.oasis.opendocument.text' })
+            .then(function(blob) { callback(null, { blob: blob, ext: 'odt', mime: 'application/vnd.oasis.opendocument.text' }); })
+            .catch(function() { callback(new Error(t('err_conversion')), null); });
+          return;
+        } else {
+          callback(new Error(t('err_unsupported')), null); return;
+        }
+        callback(null, { blob: blob, ext: targetFormat, mime: mime });
+      } catch (err) { callback(err, null); }
+    }
+
+    function convertDocument(file, targetFormat, callback) {
+      const ext = getExt(file.name);
+      const reader = new FileReader();
+      const binaryFormats = ['docx', 'odt', 'epub', 'pdf', 'pptx', 'xlsx', 'xls'];
+      const isBinary = binaryFormats.indexOf(ext) !== -1;
+
+      reader.onload = function(e) {
+        try {
+          if (ext === 'doc') {
+            callback(new Error(t('err_target_unsupported') + ' (DOC)'), null);
+            return;
+          }
+          if (ext === 'xls') {
+            if (typeof XLSX === 'undefined') { callback(new Error(t('err_lib')), null); return; }
+            const data = new Uint8Array(e.target.result);
+            const workbook = XLSX.read(data, { type: 'array' });
+            handleSpreadsheetOutput(workbook, file.name, targetFormat, callback);
+            return;
+          }
+          if (ext === 'xlsx') {
+            if (typeof XLSX === 'undefined') { callback(new Error(t('err_lib')), null); return; }
+            const data = new Uint8Array(e.target.result);
+            const workbook = XLSX.read(data, { type: 'array' });
+            handleSpreadsheetOutput(workbook, file.name, targetFormat, callback);
+            return;
+          }
+          if (ext === 'csv') {
+            if (targetFormat === 'txt') {
+              const text = e.target.result;
+              callback(null, { blob: new Blob([text], { type: 'text/plain;charset=utf-8' }), ext: 'txt', mime: 'text/plain' });
+              return;
+            }
+            if (targetFormat === 'xlsx' || targetFormat === 'xls') {
+              if (typeof XLSX === 'undefined') { callback(new Error(t('err_lib')), null); return; }
+              const text = e.target.result;
+              const workbook = XLSX.read(text, { type: 'string' });
+              const bookType = targetFormat === 'xls' ? 'xls' : 'xlsx';
+              const mimeOut = targetFormat === 'xls'
+                ? 'application/vnd.ms-excel'
+                : 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet';
+              const out = XLSX.write(workbook, { bookType: bookType, type: 'array' });
+              callback(null, { blob: new Blob([out], { type: mimeOut }), ext: targetFormat, mime: mimeOut });
+              return;
+            }
+            callback(new Error(t('err_unsupported')), null);
+            return;
+          }
+          if (ext === 'txt' || ext === 'text') {
+            const content = e.target.result;
+            if (['html', 'rtf', 'pdf', 'docx', 'odt'].indexOf(targetFormat) !== -1) {
+              convertText(content, targetFormat, callback);
+            } else {
+              callback(new Error(t('err_unsupported')), null);
+            }
+            return;
+          }
+          if (ext === 'html') {
+            const htmlContent = e.target.result;
+            if (targetFormat === 'txt') {
+              const div = document.createElement('div');
+              div.innerHTML = htmlContent;
+              div.querySelectorAll('script,style').forEach(function(s) { s.remove(); });
+              const textContent = div.textContent || div.innerText || '';
+              callback(null, { blob: new Blob([textContent], { type: 'text/plain;charset=utf-8' }), ext: 'txt', mime: 'text/plain' });
+            } else if (targetFormat === 'rtf' || targetFormat === 'pdf' || targetFormat === 'docx' || targetFormat === 'odt') {
+              const div = document.createElement('div');
+              div.innerHTML = htmlContent;
+              div.querySelectorAll('script,style').forEach(function(s) { s.remove(); });
+              const textContent = div.textContent || div.innerText || '';
+              convertText(textContent, targetFormat, callback);
+            } else {
+              callback(new Error(t('err_unsupported')), null);
+            }
+            return;
+          }
+          if (ext === 'rtf') {
+            const rtfContent = e.target.result;
+            let plainText = rtfContent
+              .replace(/\\par[d]?/g, '\n')
+              .replace(/\\[a-z]+[0-9]* ?/gi, '')
+              .replace(/[{}]/g, '')
+              .replace(/\\\\/g, '\\')
+              .replace(/\\'/g, "'")
+              .trim();
+            if (targetFormat === 'txt') {
+              callback(null, { blob: new Blob([plainText], { type: 'text/plain;charset=utf-8' }), ext: 'txt', mime: 'text/plain' });
+            } else if (['html', 'pdf', 'docx', 'odt'].indexOf(targetFormat) !== -1) {
+              convertText(plainText, targetFormat, callback);
+            } else {
+              callback(new Error(t('err_unsupported')), null);
+            }
+            return;
+          }
+          if (ext === 'docx') {
+            if (typeof mammoth === 'undefined') { callback(new Error(t('err_lib')), null); return; }
+            const arrayBuffer = e.target.result;
+            if (targetFormat === 'html') {
+              mammoth.convertToHtml({ arrayBuffer: arrayBuffer })
+                .then(function(result) {
+                  const fullHtml = '<!DOCTYPE html>\n<html lang="en">\n<head>\n<meta charset="UTF-8">\n<meta name="viewport" content="width=device-width, initial-scale=1.0">\n<title>Converted Document</title>\n<style>body{font-family:system-ui,-apple-system,sans-serif;line-height:1.7;max-width:800px;margin:40px auto;padding:0 20px;color:#222;}img{max-width:100%;}</style>\n</head>\n<body>\n' + result.value + '\n</body>\n</html>';
+                  callback(null, { blob: new Blob([fullHtml], { type: 'text/html;charset=utf-8' }), ext: 'html', mime: 'text/html' });
+                })
+                .catch(function() { callback(new Error(t('err_conversion')), null); });
+            } else {
+              mammoth.extractRawText({ arrayBuffer: arrayBuffer })
+                .then(function(result) {
+                  const text = result.value;
+                  if (targetFormat === 'txt') {
+                    callback(null, { blob: new Blob([text], { type: 'text/plain;charset=utf-8' }), ext: 'txt', mime: 'text/plain' });
+                  } else if (['rtf', 'pdf', 'odt'].indexOf(targetFormat) !== -1) {
+                    convertText(text, targetFormat, callback);
+                  } else {
+                    callback(new Error(t('err_unsupported')), null);
+                  }
+                })
+                .catch(function() { callback(new Error(t('err_conversion')), null); });
+            }
+            return;
+          }
+          if (ext === 'odt') {
+            if (typeof JSZip === 'undefined') { callback(new Error(t('err_lib')), null); return; }
+            const arrayBuffer = e.target.result;
+            JSZip.loadAsync(arrayBuffer).then(function(zip) {
+              return zip.file('content.xml').async('string');
+            }).then(function(contentXml) {
+              const textMatches = contentXml.match(/<text:p[^>]*>([\s\S]*?)<\/text:p>/g) || [];
+              let textParts = [];
+              textMatches.forEach(function(p) {
+                const inner = p.replace(/<[^>]+>/g, '');
+                textParts.push(inner);
+              });
+              const text = textParts.join('\n');
+              if (targetFormat === 'txt') {
+                callback(null, { blob: new Blob([text], { type: 'text/plain;charset=utf-8' }), ext: 'txt', mime: 'text/plain' });
+              } else if (['html', 'rtf', 'pdf', 'docx'].indexOf(targetFormat) !== -1) {
+                convertText(text, targetFormat, callback);
+              } else {
+                callback(new Error(t('err_unsupported')), null);
+              }
+            }).catch(function() { callback(new Error(t('err_conversion')), null); });
+            return;
+          }
+          if (ext === 'epub') {
+            if (typeof JSZip === 'undefined') { callback(new Error(t('err_lib')), null); return; }
+            const arrayBuffer = e.target.result;
+            JSZip.loadAsync(arrayBuffer).then(function(zip) {
+              const promises = [];
+              zip.forEach(function(path, entry) {
+                if (path.endsWith('.html') || path.endsWith('.xhtml') || path.endsWith('.htm')) {
+                  promises.push(entry.async('string'));
+                }
+              });
+              return Promise.all(promises);
+            }).then(function(htmlParts) {
+              const div = document.createElement('div');
+              htmlParts.forEach(function(h) {
+                const cleaned = h.replace(/<script[\s\S]*?<\/script>/gi, '');
+                div.innerHTML += cleaned;
+              });
+              const text = div.textContent || div.innerText || '';
+              if (targetFormat === 'txt') {
+                callback(null, { blob: new Blob([text], { type: 'text/plain;charset=utf-8' }), ext: 'txt', mime: 'text/plain' });
+              } else if (targetFormat === 'html' || targetFormat === 'pdf') {
+                convertText(text, targetFormat, callback);
+              } else {
+                callback(new Error(t('err_unsupported')), null);
+              }
+            }).catch(function() { callback(new Error(t('err_conversion')), null); });
+            return;
+          }
+          if (ext === 'pdf') {
+            if (typeof pdfjsLib === 'undefined') { callback(new Error(t('err_lib')), null); return; }
+            const arrayBuffer = e.target.result;
+            pdfjsLib.getDocument({ data: arrayBuffer }).promise.then(function(pdf) {
+              // Check output type
+              if (targetFormat === 'txt') {
+                const pagePromises = [];
+                for (let i = 1; i <= pdf.numPages; i++) {
+                  pagePromises.push(pdf.getPage(i).then(function(page) {
+                    return page.getTextContent().then(function(textContent) {
+                      return textContent.items.map(function(item) { return item.str; }).join(' ');
+                    });
+                  }));
+                }
+                return Promise.all(pagePromises).then(function(pagesText) {
+                  const fullText = pagesText.join('\n\n');
+                  callback(null, { blob: new Blob([fullText], { type: 'text/plain;charset=utf-8' }), ext: 'txt', mime: 'text/plain' });
+                });
+              } else if (targetFormat === 'html') {
+                const pagePromises = [];
+                for (let i = 1; i <= pdf.numPages; i++) {
+                  pagePromises.push(pdf.getPage(i).then(function(page) {
+                    return page.getTextContent().then(function(textContent) {
+                      return textContent.items.map(function(item) { return item.str; }).join(' ');
+                    });
+                  }));
+                }
+                return Promise.all(pagePromises).then(function(pagesText) {
+                  const fullText = pagesText.join('\n\n');
+                  convertText(fullText, 'html', callback);
+                });
+              } else if (targetFormat === 'docx' || targetFormat === 'odt' || targetFormat === 'rtf') {
+                const pagePromises = [];
+                for (let i = 1; i <= pdf.numPages; i++) {
+                  pagePromises.push(pdf.getPage(i).then(function(page) {
+                    return page.getTextContent().then(function(textContent) {
+                      return textContent.items.map(function(item) { return item.str; }).join(' ');
+                    });
+                  }));
+                }
+                return Promise.all(pagePromises).then(function(pagesText) {
+                  const fullText = pagesText.join('\n\n');
+                  convertText(fullText, targetFormat, callback);
+                });
+              } else if (['jpg', 'jpeg', 'png', 'webp'].indexOf(targetFormat) !== -1) {
+                // Render pages to images
+                const pages = [];
+                const renderPromises = [];
+                for (let i = 1; i <= pdf.numPages; i++) {
+                  renderPromises.push(pdf.getPage(i).then(function(page) {
+                    const viewport = page.getViewport({ scale: 2.0 });
+                    const canvas = document.createElement('canvas');
+                    canvas.width = viewport.width;
+                    canvas.height = viewport.height;
+                    const ctx = canvas.getContext('2d');
+                    return page.render({ canvasContext: ctx, viewport: viewport }).promise.then(function() {
+                      return canvas;
+                    });
+                  }));
+                }
+                return Promise.all(renderPromises).then(function(canvases) {
+                  // For single-page output, use first page
+                  const canvas = canvases[0];
+                  if (targetFormat === 'png') {
+                    canvas.toBlob(function(blob) {
+                      callback(null, { blob: blob, ext: 'png', mime: 'image/png' });
+                    }, 'image/png');
+                  } else {
+                    const mime = (targetFormat === 'webp') ? 'image/webp' : 'image/jpeg';
+                    const ext = targetFormat === 'webp' ? 'webp' : 'jpg';
+                    canvas.toBlob(function(blob) {
+                      callback(null, { blob: blob, ext: ext, mime: mime });
+                    }, mime, 0.95);
+                  }
+                });
+              } else {
+                callback(new Error(t('err_unsupported')), null);
+                return;
+              }
+            }).catch(function() { callback(new Error(t('err_conversion')), null); });
+            return;
+          }
+          if (ext === 'pptx') {
+            if (typeof JSZip === 'undefined') { callback(new Error(t('err_lib')), null); return; }
+            const arrayBuffer = e.target.result;
+            JSZip.loadAsync(arrayBuffer).then(function(zip) {
+              const slidePromises = [];
+              zip.forEach(function(path, entry) {
+                if (path.startsWith('ppt/slides/slide') && path.endsWith('.xml')) {
+                  slidePromises.push(entry.async('string'));
+                }
+              });
+              return Promise.all(slidePromises);
+            }).then(function(slides) {
+              let text = '';
+              slides.forEach(function(xml, idx) {
+                text += '--- Slide ' + (idx + 1) + ' ---\n';
+                const matches = xml.match(/<a:t>([^<]*)<\/a:t>/g) || [];
+                matches.forEach(function(m) {
+                  text += m.replace(/<[^>]+>/g, '') + '\n';
+                });
+                text += '\n';
+              });
+              if (targetFormat === 'txt') {
+                callback(null, { blob: new Blob([text], { type: 'text/plain;charset=utf-8' }), ext: 'txt', mime: 'text/plain' });
+              } else {
+                callback(new Error(t('err_unsupported')), null);
+              }
+            }).catch(function() { callback(new Error(t('err_conversion')), null); });
+            return;
+          }
+          callback(new Error(t('err_unsupported')), null);
+        } catch (err) {
+          callback(new Error(t('err_conversion')), null);
+        }
+      };
+      reader.onerror = function() { callback(new Error(t('err_conversion')), null); };
+      if (isBinary) {
+        reader.readAsArrayBuffer(file);
+      } else {
+        reader.readAsText(file);
+      }
+    }
+
+    function handleSpreadsheetOutput(workbook, origName, targetFormat, callback) {
+      try {
+        if (targetFormat === 'csv') {
+          const firstSheet = workbook.Sheets[workbook.SheetNames[0]];
+          const csv = XLSX.utils.sheet_to_csv(firstSheet);
+          callback(null, { blob: new Blob([csv], { type: 'text/csv;charset=utf-8' }), ext: 'csv', mime: 'text/csv' });
+        } else if (targetFormat === 'txt') {
+          const firstSheet = workbook.Sheets[workbook.SheetNames[0]];
+          const csv = XLSX.utils.sheet_to_csv(firstSheet);
+          callback(null, { blob: new Blob([csv], { type: 'text/plain;charset=utf-8' }), ext: 'txt', mime: 'text/plain' });
+        } else if (targetFormat === 'xlsx') {
+          const out = XLSX.write(workbook, { bookType: 'xlsx', type: 'array' });
+          callback(null, { blob: new Blob([out], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' }), ext: 'xlsx', mime: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
+        } else if (targetFormat === 'xls') {
+          const out = XLSX.write(workbook, { bookType: 'xls', type: 'array' });
+          callback(null, { blob: new Blob([out], { type: 'application/vnd.ms-excel' }), ext: 'xls', mime: 'application/vnd.ms-excel' });
+        } else {
+          callback(new Error(t('err_unsupported')), null);
+        }
+      } catch (err) {
+        callback(new Error(t('err_conversion')), null);
+      }
+    }
+
+    // ============================================================
+    // CONVERT BUTTON HANDLERS
+    // ============================================================
+    convertBtnUpload.addEventListener('click', function() {
+      if (!selectedFile) { showStatus(t('err_no_file'), 'error'); return; }
+      if (!selectedFormatUpload) { showStatus(t('err_no_format'), 'error'); return; }
+      const ext = getExt(selectedFile.name);
+      const isImage = ['jpg','jpeg','png','gif','webp','bmp','svg'].indexOf(ext) !== -1;
+      const isSpreadsheet = ['xlsx','xls','csv'].indexOf(ext) !== -1;
+      const isDoc = ['pdf','txt','text','html','rtf','docx','odt','doc','epub','pptx'].indexOf(ext) !== -1;
+      if (!isImage && !isSpreadsheet && !isDoc) {
+        showStatus(t('err_unsupported'), 'error');
+        return;
+      }
+      convertBtnUpload.disabled = true;
+      const originalHTML = convertBtnUpload.innerHTML;
+      convertBtnUpload.innerHTML = '<span class="spinner"></span> ' + t('processing');
+      hideStatus();
+      clearResult();
+      const qualityValue = selectedQualityUpload === 'custom' ? customQualityUpload : (selectedQualityUpload === 'max' ? 100 : selectedQualityUpload === 'high' ? 95 : 80);
+      const handler = function(err, result) {
+        convertBtnUpload.disabled = false;
+        convertBtnUpload.innerHTML = originalHTML;
+        if (err) {
+          showStatus(err.message || t('err_conversion'), 'error');
+          return;
+        }
+        const outExt = result.ext;
+        const baseName = selectedFile.name.replace(/\.[^.]+$/, '');
+        const outName = baseName + '.' + outExt;
+        const blobUrl = URL.createObjectURL(result.blob);
+        showResult(selectedFile.name, outName, outExt, formatBytes(result.blob.size), blobUrl);
+      };
+      if (isImage) {
+        convertImage(selectedFile, selectedFormatUpload, qualityValue, handler);
+      } else {
+        convertDocument(selectedFile, selectedFormatUpload, handler);
+      }
+    });
+
+    convertBtnPaste.addEventListener('click', function() {
+      const text = pasteText.value;
+      if (!text.trim()) { showStatus(t('err_no_text'), 'error'); return; }
+      if (!selectedFormatPaste) { showStatus(t('err_no_format'), 'error'); return; }
+      convertBtnPaste.disabled = true;
+      const originalHTML = convertBtnPaste.innerHTML;
+      convertBtnPaste.innerHTML = '<span class="spinner"></span> ' + t('processing');
+      hideStatus();
+      clearResult();
+      convertText(text, selectedFormatPaste, function(err, result) {
+        convertBtnPaste.disabled = false;
+        convertBtnPaste.innerHTML = originalHTML;
+        if (err) { showStatus(err.message || t('err_conversion'), 'error'); return; }
+        const outExt = result.ext;
+        const outName = 'pasted-text.' + outExt;
+        const blobUrl = URL.createObjectURL(result.blob);
+        showResult('(pasted text)', outName, outExt, formatBytes(result.blob.size), blobUrl);
+      });
+    });
+
+    // ============================================================
+    // INIT
+    // ============================================================
+    initTheme();
+    initLanguage();
+    refreshTriggerLabels();
+    renderUploadPopoverItems();
+    renderPastePopoverItems();
+    $('langEn').classList.toggle('active', currentLang === 'en');
+    $('langBn').classList.toggle('active', currentLang === 'bn');
+  })();
+  </script>
+
+  <!-- ========== LIBRARY LOADING ========== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js" defer></script>
+  <script>
+    window.addEventListener('load', function() {
+      if (typeof pdfjsLib !== 'undefined') {
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+      }
+    });
+  </script>
+</body>
+</html>
