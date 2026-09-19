@@ -1373,6 +1373,50 @@
         return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[m];
       });
     }
+
+    // XML-safe escaping for DOCX/ODT package parts.
+    function escapeXmlText(str) {
+      if (str === null || str === undefined) return '';
+      return String(str).replace(/[&<>"']/g, function(m) {
+        return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&apos;' }[m];
+      });
+    }
+
+    // Read text-based uploads as UTF-8 without ever touching the converter page DOM.
+    async function readUtf8File(file) {
+      const buffer = await file.arrayBuffer();
+      const bytes = new Uint8Array(buffer);
+      let start = 0;
+      // UTF-8 BOM
+      if (bytes.length >= 3 && bytes[0] === 0xEF && bytes[1] === 0xBB && bytes[2] === 0xBF) start = 3;
+      return new TextDecoder('utf-8', { fatal: false }).decode(bytes.subarray(start));
+    }
+
+    function htmlToPlainText(htmlContent) {
+      const parser = new DOMParser();
+      const parsed = parser.parseFromString(htmlContent, 'text/html');
+      const root = parsed.body || parsed.documentElement;
+      if (!root) return '';
+
+      root.querySelectorAll('script,style,noscript,template,iframe,object,embed,svg').forEach(function(el) {
+        el.remove();
+      });
+
+      // Preserve meaningful block/line boundaries before extracting text.
+      root.querySelectorAll('br').forEach(function(el) {
+        el.replaceWith(parsed.createTextNode('\n'));
+      });
+      root.querySelectorAll('p,div,section,article,header,footer,main,aside,nav,h1,h2,h3,h4,h5,h6,li,dt,dd,blockquote,pre,tr,table,hr').forEach(function(el) {
+        el.appendChild(parsed.createTextNode('\n'));
+      });
+
+      return (root.textContent || '')
+        .replace(/\u00A0/g, ' ')
+        .replace(/[ \t]+\n/g, '\n')
+        .replace(/\n[ \t]+/g, '\n')
+        .replace(/\n{3,}/g, '\n\n')
+        .trim();
+    }
     function formatBytes(bytes) {
       if (!bytes || isNaN(bytes)) return '—';
       if (bytes === 0) return '0 B';
@@ -1384,7 +1428,9 @@
     function getExt(filename) {
       if (!filename) return '';
       const parts = filename.split('.');
-      return parts.length > 1 ? parts.pop().toLowerCase() : '';
+      let ext = parts.length > 1 ? parts.pop().toLowerCase() : '';
+      if (ext === 'htm') ext = 'html';
+      return ext;
     }
     function t(key) {
       return (i18n[currentLang] && i18n[currentLang][key]) || (i18n.en[key]) || key;
@@ -2264,7 +2310,7 @@
         } else if (targetFormat === 'docx') {
           if (typeof JSZip === 'undefined') { callback(new Error(t('err_lib')), null); return; }
           const zip = new JSZip();
-          const escapedXml = escapeHtml(text)
+          const escapedXml = escapeXmlText(text)
             .replace(/\n/g, '</w:t></w:r><w:r><w:t xml:space="preserve">')
             .replace(/ /g, ' ');
           zip.file('[Content_Types].xml',
@@ -2291,7 +2337,7 @@
         } else if (targetFormat === 'odt') {
           if (typeof JSZip === 'undefined') { callback(new Error(t('err_lib')), null); return; }
           const zip = new JSZip();
-          const escapedXml = escapeHtml(text).replace(/\n/g, '</text:p><text:p>');
+          const escapedXml = escapeXmlText(text).replace(/\n/g, '</text:p><text:p>');
           zip.file('mimetype', 'application/vnd.oasis.opendocument.text', { compression: 'STORE' });
           zip.file('content.xml',
             '<?xml version="1.0" encoding="UTF-8"?>' +
@@ -2318,9 +2364,48 @@
 
     function convertDocument(file, targetFormat, callback) {
       const ext = getExt(file.name);
+
+      // HTML conversion MUST use only the uploaded HTML file. Never use document.body,
+      // innerHTML of the converter app, or any global DOM node from this page.
+      if (ext === 'html') {
+        readUtf8File(file).then(function(htmlContent) {
+          try {
+            if (targetFormat === 'html') {
+              callback(null, {
+                blob: new Blob([htmlContent], { type: 'text/html;charset=utf-8' }),
+                ext: 'html',
+                mime: 'text/html'
+              });
+              return;
+            }
+
+            const textContent = htmlToPlainText(htmlContent);
+            if (!textContent) {
+              callback(new Error(t('err_conversion')), null);
+              return;
+            }
+
+            if (targetFormat === 'txt' || targetFormat === 'text') {
+              callback(null, {
+                blob: new Blob(['\uFEFF' + textContent], { type: 'text/plain;charset=utf-8' }),
+                ext: targetFormat,
+                mime: 'text/plain'
+              });
+            } else if (['rtf', 'pdf', 'docx', 'odt'].indexOf(targetFormat) !== -1) {
+              convertText(textContent, targetFormat, callback);
+            } else {
+              callback(new Error(t('err_unsupported')), null);
+            }
+          } catch (err) {
+            callback(new Error(t('err_conversion')), null);
+          }
+        }).catch(function() {
+          callback(new Error(t('err_conversion')), null);
+        });
+        return;
+      }
+
       const reader = new FileReader();
-      const binaryFormats = ['docx', 'odt', 'epub', 'pdf', 'pptx', 'xlsx', 'xls'];
-      const isBinary = binaryFormats.indexOf(ext) !== -1;
 
       reader.onload = function(e) {
         try {
@@ -2367,71 +2452,6 @@
             const content = e.target.result;
             if (['html', 'rtf', 'pdf', 'docx', 'odt'].indexOf(targetFormat) !== -1) {
               convertText(content, targetFormat, callback);
-            } else {
-              callback(new Error(t('err_unsupported')), null);
-            }
-            return;
-          }
-          if (ext === 'html') {
-            // IMPORTANT: parse ONLY the uploaded HTML string. Never read document.body
-            // or any other element from the All Files Converter page itself.
-            const htmlContent = typeof e.target.result === 'string' ? e.target.result : '';
-
-            function extractUploadedHtmlText(sourceHtml) {
-              try {
-                const parser = new DOMParser();
-                const parsed = parser.parseFromString(sourceHtml, 'text/html');
-                const root = parsed.body || parsed.documentElement;
-                if (!root) return '';
-
-                // Remove non-content elements from the uploaded document only.
-                root.querySelectorAll('script,style,noscript,template,iframe,object,embed').forEach(function(el) {
-                  el.remove();
-                });
-
-                // Convert common block elements into line breaks before extracting text.
-                root.querySelectorAll('br').forEach(function(el) { el.replaceWith('\n'); });
-                root.querySelectorAll('p,div,section,article,header,footer,main,aside,nav,h1,h2,h3,h4,h5,h6,li,dt,dd,blockquote,pre,table,tr').forEach(function(el) {
-                  el.appendChild(parsed.createTextNode('\n'));
-                });
-
-                let text = root.textContent || '';
-                text = text
-                  .replace(/\u00A0/g, ' ')
-                  .replace(/[ \t]+\n/g, '\n')
-                  .replace(/\n[ \t]+/g, '\n')
-                  .replace(/\n{3,}/g, '\n\n')
-                  .trim();
-
-                return text;
-              } catch (parseError) {
-                // Safe fallback: still operate on the uploaded string, never on the app DOM.
-                const temp = document.implementation.createHTMLDocument('Uploaded HTML');
-                temp.documentElement.innerHTML = sourceHtml;
-                const root = temp.body || temp.documentElement;
-                root.querySelectorAll('script,style,noscript,template,iframe,object,embed').forEach(function(el) { el.remove(); });
-                return (root.textContent || '').replace(/\u00A0/g, ' ').replace(/\n{3,}/g, '\n\n').trim();
-              }
-            }
-
-            const textContent = extractUploadedHtmlText(htmlContent);
-            if (!textContent.trim()) {
-              callback(new Error(t('err_conversion')), null);
-              return;
-            }
-
-            if (targetFormat === 'txt') {
-              // UTF-8 BOM improves compatibility with Windows/Android text editors and
-              // prevents UTF-8 characters such as Bengali and emoji from becoming mojibake.
-              const utf8Text = '\uFEFF' + textContent;
-              callback(null, { blob: new Blob([utf8Text], { type: 'text/plain;charset=utf-8' }), ext: 'txt', mime: 'text/plain' });
-            } else if (targetFormat === 'rtf' || targetFormat === 'pdf' || targetFormat === 'docx' || targetFormat === 'odt') {
-              convertText(textContent, targetFormat, callback);
-            } else if (targetFormat === 'html') {
-              // HTML → HTML: preserve the uploaded HTML itself instead of converting
-              // the converter application's DOM into a new document.
-              const htmlBlob = new Blob(['\uFEFF', htmlContent], { type: 'text/html;charset=utf-8' });
-              callback(null, { blob: htmlBlob, ext: 'html', mime: 'text/html' });
             } else {
               callback(new Error(t('err_unsupported')), null);
             }
@@ -2687,7 +2707,8 @@
     convertBtnUpload.addEventListener('click', function() {
       if (!selectedFile) { showStatus(t('err_no_file'), 'error'); return; }
       if (!selectedFormatUpload) { showStatus(t('err_no_format'), 'error'); return; }
-      const ext = getExt(selectedFile.name);
+      const detection = detectFormat(selectedFile);
+      const ext = detection.ext || getExt(selectedFile.name);
       const isImage = ['jpg','jpeg','png','gif','webp','bmp','svg'].indexOf(ext) !== -1;
       const isSpreadsheet = ['xlsx','xls','csv'].indexOf(ext) !== -1;
       const isDoc = ['pdf','txt','text','html','rtf','docx','odt','doc','epub','pptx'].indexOf(ext) !== -1;
