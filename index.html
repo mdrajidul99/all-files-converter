@@ -1384,12 +1384,24 @@
 
     // Read text-based uploads as UTF-8 without ever touching the converter page DOM.
     async function readUtf8File(file) {
-      const buffer = await file.arrayBuffer();
-      const bytes = new Uint8Array(buffer);
-      let start = 0;
-      // UTF-8 BOM
-      if (bytes.length >= 3 && bytes[0] === 0xEF && bytes[1] === 0xBB && bytes[2] === 0xBF) start = 3;
-      return new TextDecoder('utf-8', { fatal: false }).decode(bytes.subarray(start));
+      // Read ONLY the supplied File/Blob. Never read from the converter page DOM.
+      // Keep a FileReader fallback for older mobile browsers.
+      if (!file || typeof file.slice !== 'function') throw new Error('Invalid source file');
+      try {
+        const buffer = await file.slice(0, file.size).arrayBuffer();
+        const bytes = new Uint8Array(buffer);
+        let start = 0;
+        // UTF-8 BOM
+        if (bytes.length >= 3 && bytes[0] === 0xEF && bytes[1] === 0xBB && bytes[2] === 0xBF) start = 3;
+        return new TextDecoder('utf-8', { fatal: false }).decode(bytes.subarray(start));
+      } catch (err) {
+        return await new Promise(function(resolve, reject) {
+          const reader = new FileReader();
+          reader.onload = function(e) { resolve(String(e.target.result || '').replace(/^\uFEFF/, '')); };
+          reader.onerror = function() { reject(new Error('Unable to read source file')); };
+          reader.readAsText(file, 'UTF-8');
+        });
+      }
     }
 
     function htmlToPlainText(htmlContent) {
@@ -2363,12 +2375,15 @@
     }
 
     function convertDocument(file, targetFormat, callback) {
-      const ext = getExt(file.name);
+      // Freeze the exact source reference for this conversion. The conversion engine
+      // must never look at selectedFile or any DOM content from the converter itself.
+      const sourceFile = file;
+      const ext = getExt(sourceFile && sourceFile.name);
 
       // HTML conversion MUST use only the uploaded HTML file. Never use document.body,
       // innerHTML of the converter app, or any global DOM node from this page.
       if (ext === 'html') {
-        readUtf8File(file).then(function(htmlContent) {
+        readUtf8File(sourceFile).then(function(htmlContent) {
           try {
             if (targetFormat === 'html') {
               callback(null, {
@@ -2722,6 +2737,10 @@
       hideStatus();
       clearResult();
       const qualityValue = selectedQualityUpload === 'custom' ? customQualityUpload : (selectedQualityUpload === 'max' ? 100 : selectedQualityUpload === 'high' ? 95 : 80);
+      // Freeze the selected File object before any asynchronous conversion starts.
+      // This prevents a later UI interaction from changing the source being converted.
+      const sourceFile = selectedFile;
+      const sourceFormat = selectedFormatUpload;
       const handler = function(err, result) {
         convertBtnUpload.disabled = false;
         convertBtnUpload.innerHTML = originalHTML;
@@ -2730,15 +2749,15 @@
           return;
         }
         const outExt = result.ext;
-        const baseName = selectedFile.name.replace(/\.[^.]+$/, '');
+        const baseName = sourceFile.name.replace(/\.[^.]+$/, '');
         const outName = baseName + '.' + outExt;
         const blobUrl = URL.createObjectURL(result.blob);
-        showResult(selectedFile.name, outName, outExt, formatBytes(result.blob.size), blobUrl);
+        showResult(sourceFile.name, outName, outExt, formatBytes(result.blob.size), blobUrl);
       };
       if (isImage) {
-        convertImage(selectedFile, selectedFormatUpload, qualityValue, handler);
+        convertImage(sourceFile, sourceFormat, qualityValue, handler);
       } else {
-        convertDocument(selectedFile, selectedFormatUpload, handler);
+        convertDocument(sourceFile, sourceFormat, handler);
       }
     });
 
